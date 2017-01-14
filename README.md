@@ -1,2 +1,2 @@
 # braintrain
-BrainTrain - A JQuery Mobile Treasure Hunt Web Application
+BrainTrain - A Basic JQuery Mobile Railway Treasure Hunt Web Application
