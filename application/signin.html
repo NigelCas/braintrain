@@ -9,6 +9,11 @@
 	<link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/listview-grid.css">
 	<link rel="stylesheet" href="css/styles.css">
+	<style>
+		.error {
+			color:red;
+		}
+	</style>
 </head>
 <body>
 
@@ -28,23 +33,28 @@
 			<div class="custom-center-wrapper">
 			   <i class="fa fa-user-circle-o fa-4x" aria-hidden="true"></i>
 			</div>
-            <label for="txt-email">Email Address</label>
-            <input type="text" name="txt-email" id="txt-email" value="">
-            <label for="txt-password">Password</label>
-            <input type="password" name="txt-password" id="txt-password" value="">
-            <fieldset data-role="controlgroup">
-                <input type="checkbox" name="chck-rememberme" id="chck-rememberme" checked="">
-                <label for="chck-rememberme">Remember me</label>
-            </fieldset>
-            <a href="#dlg-invalid-credentials" data-rel="popup" data-transition="pop" data-position-to="window" id="btn-submit" class="ui-btn ui-btn-b ui-corner-all mc-top-margin-1-5">Submit</a>
-            <p class="mc-top-margin-1-5"><a href="begin-password-reset.html">Can't access your account?</a></p>
-            <div data-role="popup" id="dlg-invalid-credentials" data-dismissible="false" style="max-width:400px;">
-                <div role="main" class="ui-content">
-                    <h3 class="mc-text-danger">Login Failed</h3>
-                    <p>Did you enter the right credentials?</p>
-                    <div class="mc-text-center"><a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-b mc-top-margin-1-5">OK</a></div>
-                </div>
-            </div>
+			<form id="signinForm">
+				<label for="txt-email">Email Address</label>
+				<input type="text" name="loginemail" id="loginemail" placeholder="Enter Email">
+				<label for="txt-password">Password</label>
+				<input type="password" name="loginpassword" id="loginpassword" placeholder="Enter Password">
+				<fieldset data-role="controlgroup">
+					<input type="checkbox" name="chck-rememberme" id="chck-rememberme" checked="">
+					<label for="chck-rememberme">Remember me</label>
+				</fieldset>
+				<input id="btn-login-submit" data-ajax="false" data-icon="check" class="ui-btn ui-btn-b ui-corner-all mc-top-margin-1-5" type="submit" value="Login"> </input>
+				<p class="mc-top-margin-1-5"><a href="#dlg-invalid-credentials" data-rel="popup" data-transition="pop" data-position-to="window">Can't access your account?</a></p>
+			</form>	
+				<!-- Use if necessary -->
+				<div data-role="popup" id="dlg-invalid-credentials" data-dismissible="false" style="max-width:400px;">
+					<div role="main" class="ui-content">
+						<h3 class="mc-text-danger">Login Failed</h3>
+						<p>Did you enter the right credentials?</p>
+						<div class="mc-text-center"><a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-b mc-top-margin-1-5">OK</a></div>
+					</div>
+				</div>
+			
+			
         </div>
 		
 		<div data-role="footer" data-position="fixed">
@@ -55,9 +65,9 @@
 	<!-- Options Panel -->
 	<div data-role="panel" id="options-push" data-display="push" data-position="right">
 		<ul data-role="listview">
-			<li><a href="#" class="fa fa-cog"> App Settings</a></li>
-			<li><a href="#" class="fa fa-envelope"> Subscriptions</a></li>
-			<li><a href="#" class="fa fa-info-circle" > About</a></li>
+                    <li><a href="settings.html" class="fa fa-cog"> App Settings</a></li>
+                    <li><a href="signin.html" class="fa fa-user-circle"> New User</a></li>
+                    <li><a href="#" class="fa fa-info-circle" > About</a></li>
 		</ul>
 		<br><br>
 		<button data-rel="close" class="ui-btn ui-corner-all ui-shadow">
@@ -70,6 +80,7 @@
 
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
 <script src="js/scripts.js"></script>
 
 	

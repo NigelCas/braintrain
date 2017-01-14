@@ -14,6 +14,7 @@
 
         <script src="js/jquery.min.js"></script>
         <script src="js/jquery.mobile-1.4.5.min.js"></script>
+		<script src="js/jquery.validate.min.js"></script>
         <script src="js/scripts.js"></script>
 
         <!--map script area-->
@@ -67,6 +68,7 @@
                 }
             });
             // });
+			
         </script>
 
         <!--map script area ends-->
@@ -144,9 +146,12 @@
                     <li><a href="#" class="fa fa-info-circle" > About</a></li>
                 </ul>
                 <br><br>
-                <button data-rel="close" class="ui-btn ui-corner-all ui-shadow">
-                    Close <i class="fa fa-times-circle" aria-hidden="true"></i>
+				<label for="btn-logged-user">Signed In As :</label>
+                <button class="ui-btn ui-corner-all ui-shadow" id="btn-logged-user">
                 </button>
+				
+				
+				
             </div>
 
         </div>

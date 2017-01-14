@@ -2,6 +2,9 @@
 /* Center align components , default left aligned*/
 /* define all classes with 'custom' prefix */
 
+/* Transition fix*/
+.ui-page { -webkit-backface-visibility: hidden; }
+
 .custom-center-wrapper{
   text-align: center;
 }

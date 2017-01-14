@@ -3,20 +3,69 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Default theme - Brain Train Demo</title>
+	<title>Brain Train | Index</title>
+	<link rel="shortcut icon" href="favicon.ico">
 	<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css">
 	<link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/listview-grid.css">
 	<link rel="stylesheet" href="css/styles.css">
-	<link rel="shortcut icon" href="favicon.ico">
-	<script src="js/jquery.js"></script>
-	<script src="js/jquery.mobile-1.4.5.min.js"></script>
-	<script src="js/jquery.js"></script>
-	<script>
-		window.location.replace("Home.html");
-	</script>
 </head>
 <body>
+
+	<div data-role="page" data-theme="b" id="indexpage">
+
+		<div data-role="header" data-position="fixed" >
+			<h1>BrainTrain</h1>
+			<a href="#" data-rel="back" data-ajax="false" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left">Back</a>
+			<a href="#options-push" class="ui-btn ui-corner-all ui-shadow ui-btn-icon-left ui-icon-gear ui-btn-icon-notext">Options</a>
+			<div id="line"></div>						
+		</div>	
+	
+		<div class="ui-content" role="main">
+			<div class="custom-center-wrapper">
+			   <img src="images/braintrain.png" alt="image" style="height:auto; width:60%;"/>
+			</div>
+			<h3> Your RailRoad Treasure Hunt Adventure Awaits.... </h3>
+			<a href="signin.html" data-transition="slide" data-ajax="false" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-home"> Start Treasure Hunt </a>
+			<a href="#dlg-invalid-answer" data-rel="popup" data-transition="pop" data-position-to="window" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-info"> Game Rules & Info </a>
+        </div>	
+	
+	
+				<div data-role="popup" id="dlg-invalid-answer" data-dismissible="false" style="max-width:800px;">
+                <div role="main" class="ui-content">
+                    <h3 class="mc-text-info"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>&nbsp Game Rules & Info</h3>
+					<div id="line"></div><br/>
+                    <p>
+					   1. You must have a <u>BrainTrain Account</u> to Play. <br/><br/>
+					   2. Game starts only once you reserve a ticket for a particular destination <br/><br/>
+					   3. <u>Once a ticket is purchased </u>, while on route of the journey or at the destination you will be subjected 
+					   to various challenges. <br/><br/>
+					   4. Sucessfully completed Challenges will be rewarded awards & points which will accumilate overtime or maybe even rewarded a <b>Free Train Ticket if you are lucky!</b> <br/><br/>
+					   5. Challenges will vary form simple quizes to picture tile puzzles and many more..<br/><br/>
+					   6. Challenges will be about your train destination, the cities/towns they are located, and it's nearby places of interest.
+				   </p>
+                    <div class="mc-text-center"><a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-b mc-top-margin-1-5">OK</a></div>
+                </div>
+		</div>
+	
+		<!-- Options Panel -->
+		<div data-role="panel" id="options-push" data-display="push" data-position="right">
+			<br><br>
+			<button data-rel="close" class="ui-btn ui-corner-all ui-shadow">
+				Please Sign In <i class="fa fa-times-circle" aria-hidden="true"></i>
+			</button>
+		</div>	
+		
+	
+	</div>
+
+
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/scripts.js"></script>
+
 </body>
 </html>
-		
-		
