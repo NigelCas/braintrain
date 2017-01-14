@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>London-POIs</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/listview-grid.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+
+<div data-role="page" data-theme="b" id="destpoipage" >
+
+	<div class="my-page">
+
+		<div data-role="header" data-position="fixed" >
+			<h1>LONDON</h1>
+			<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left">Back</a>
+			<a href="#options-push" class="ui-btn ui-corner-all ui-shadow ui-btn-icon-left ui-icon-gear ui-btn-icon-notext">Options</a>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#" class="fa fa-certificate" aria-hidden="true"> 2300 </a></li>
+					<li><a href="#" class="fa fa-check-square" aria-hidden="true"> 10/25 </a></li>
+					<li><a href="#" class="fa fa-bars" aria-hidden="true"> Leaderboard</a></li>
+				</ul>
+			</div>
+			<h3 class="custom-center-wrapper" style="font-size:18px;" >Places Of Intrest</h3>
+			<div id="line"></div>
+		</div>	
+
+		<div class="ui-content" role="main">
+			<ul data-role="listview" data-inset="true">
+				<li><a href="poi_Information.html" data-transition="slide">
+					<img src="images/londoneye.jpg" class="ui-li-thumb">
+					<h2>London Eye</h2>
+					<p>City Wide view of London</p>
+					<p class="ui-li-aside">
+						<a href="#" class="favlink">
+							<i class="fa fa-heart" aria-hidden="true"></i>
+						</a>
+					</p>
+				</a></li>
+				<li><a href="#">
+					<img src="images/1980.jpg" class="ui-li-thumb">
+					<h2>Madame Tussauds</h2>
+					<p>Wax Museum of Curiosities</p>
+					<p class="ui-li-aside">
+						<a href="#" class="favlink">
+							<i class="fa fa-heart" aria-hidden="true"></i>
+						</a>
+					</p>
+				</a></li>
+				<li><a href="#">
+					<img src="images/buckingham.jpg" class="ui-li-thumb">
+					<h2>Buckingham Place</h2>
+					<p>Official residence of British Royalty</p>
+					<p class="ui-li-aside">
+						<a href="#" class="favlink">
+							<i class="fa fa-heart" aria-hidden="true"></i>
+						</a>
+					</p>
+				</a></li>
+				<li><a href="#">
+					<img src="images/Kings_Cross.jpg" class="ui-li-thumb">
+					<h2>King's Cross </h2>
+					<p>London's first and oldest railway station</p>
+					<p class="ui-li-aside">
+						<a href="#" class="favlink">
+							<i class="fa fa-heart" aria-hidden="true"></i>
+						</a>
+					</p>
+				</a></li>
+				<li><a href="#">
+					<img src="images/tower-of-london.jpg" class="ui-li-thumb">
+					<h2>Tower of London</h2>
+					<p>First and Oldest Castle in Britain</p>
+					<p class="ui-li-aside">
+						<a href="#" class="favlink">
+							<i class="fa fa-heart" aria-hidden="true"></i>
+						</a>
+					</p>
+				</a></li>
+				<li><a href="#">
+					<img src="images/Westminster.jpg" class="ui-li-thumb">
+					<h2>Westminster</h2>
+					<p>British Head of Government and house of representatives</p>
+					<p class="ui-li-aside">
+						<a href="#" class="favlink">
+							<i class="fa fa-heart" aria-hidden="true"></i>
+						</a>
+					</p>
+				</a></li>
+				<li><a href="#">
+					<img src="images/St.-Pauls-Cathedral.jpg" class="ui-li-thumb">
+					<h2>St. Paul's Cathedral </h2>
+					<p>Grand Cathedral in the heart of City</p>
+					<p class="ui-li-aside">
+						<a href="#" class="favlink">
+							<i class="fa fa-heart" aria-hidden="true"></i>
+						</a>
+					</p>
+				</a></li>
+				<li><a href="#">
+					<img src="images/Tower-Bridge.jpg" class="ui-li-thumb">
+					<h2>Tower Bridge </h2>
+					<p>Victorian Era National Monument</p>
+					<p class="ui-li-aside">
+						<a href="#" class="favlink">
+							<i class="fa fa-heart" aria-hidden="true"></i>
+						</a>
+					</p>
+				</a></li>
+				<li><a href="#">
+					<img src="images/the_shard_and_tower_bridge.jpg" class="ui-li-thumb">
+					<h2>The Shard </h2>
+					<p>Modern Complex Of Luxary</p>
+					<p class="ui-li-aside">
+						<a href="#" class="favlink">
+							<i class="fa fa-heart" aria-hidden="true"></i>
+						</a>
+					</p>
+				</a></li>				
+			</ul>
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="Home.html" class="fa fa-map" > Map</a></li>
+					<li><a href="poiReviews.html" class="fa fa-certificate"> Reviews</a></li>
+					<li><a href="achievement_cat.html" class="fa fa-trophy"> Rewards</a></li>
+					<li><a href="reservationsAll.html" class="fa fa-calendar-check-o"> Journeys</a></li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+	
+	<!-- Options Panel -->
+	<div data-role="panel" id="options-push" data-display="push" data-position="right">
+		<ul data-role="listview">
+			<li><a href="settings.html" class="fa fa-cog"> App Settings</a></li>
+			<li><a href="#" class="fa fa-envelope"> Subscriptions</a></li>
+			<li><a href="#" class="fa fa-info-circle" > About</a></li>
+		</ul>
+		<br><br>
+		<button data-rel="close" class="ui-btn ui-corner-all ui-shadow">
+			Close <i class="fa fa-times-circle" aria-hidden="true"></i>
+		</button>
+	</div>
+
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/scripts.js"></script>
+
+	
+</body>
+</html>

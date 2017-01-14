@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BrainTrain Challenge</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/listview-grid.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+
+<div data-role="page" data-theme="b" id="destpoipage" >
+
+		<div data-role="header" data-position="fixed" >
+			<h1>LONDON</h1>
+			<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left">Back</a>
+			<a href="#options-push" class="ui-btn ui-corner-all ui-shadow ui-btn-icon-left ui-icon-gear ui-btn-icon-notext">Options</a>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#" class="fa fa-certificate" aria-hidden="true"> 2300 </a></li>
+					<li><a href="#" class="fa fa-check-square" aria-hidden="true"> 10/25 </a></li>
+					<li><a href="#" class="fa fa-bars" aria-hidden="true"> Leaderboard</a></li>
+				</ul>
+			</div>
+			<h3 class="custom-center-wrapper" style="font-size:20px; margin: 0 0%;">Challenge Summary</h3>
+			<div id="line"></div>						
+		</div>	
+		
+		<div class="ui-content" role="main">
+		
+			<div class="custom-center-wrapper">
+				<div style="font-size:22px; color:silver;" >
+					<i class="fa fa-certificate"> Silver Reward (5 points) X1</i>
+				</div>
+				<div style="font-size:22px; color:gold;" >
+					<i class="fa fa-trophy"> Gold Reward (10 points) X1</i>
+				</div>
+				<div style="font-size:22px; color:paleturquoise;" >
+					<i class="fa fa-diamond"> Diamond Reward (20 points) X1</i>
+				</div>
+				<div id="line" style="margin-top:10px"></div>
+
+				<img src="images/award.png" alt="image" style="border-radius: 25px; height:auto; width:75%; margin-top:100px"/>
+				<div style="font-size:30px; color:white;" >
+					Challenge Completed !
+				</div>
+			</div>
+			
+
+        </div>
+		
+		<div data-role="footer" data-position="fixed">
+			<div id="line"></div>
+			<div class="custom-center-wrapper" style="font-size:20px; color:gold;" >
+				<i class="fa fa-subway"> Total Game Score : 2335 points </i>
+			</div>
+			<div id="line"></div>
+			<div class="custom-center-wrapper" style="font-size:30px;">
+				<a href="station.html" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-home"> Back To Destination Page </a>
+			</div>
+		</div>
+
+	
+	<!-- Options Panel -->
+	<div data-role="panel" id="options-push" data-display="push" data-position="right">
+		<ul data-role="listview">
+			<li><a href="#" class="fa fa-cog"> App Settings</a></li>
+			<li><a href="#" class="fa fa-envelope"> Subscriptions</a></li>
+			<li><a href="#" class="fa fa-info-circle"> About</a></li>
+		</ul>
+		<br><br>
+		<button data-rel="close" class="ui-btn ui-corner-all ui-shadow">
+			Close <i class="fa fa-times-circle" aria-hidden="true"></i>
+		</button>
+	</div>
+
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/scripts.js"></script>
+
+	
+</body>
+</html>		

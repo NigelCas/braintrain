@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Settings|Brain Train</title>
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css">
+        <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/listview-grid.css">
+        <link rel="stylesheet" href="css/styles.css">
+
+        <style>
+            .input-feild{
+                /*border-color: #ffff   ff !important;*/ 
+                /*                width: 75% !important; 
+                                height: 100px !important; */
+            }
+            .form-area{
+                width: 100%;
+                height: 100%;
+            }
+            .container{
+                width: 100% !important;
+                height: 250px !important;
+            }
+            .btn-area .ui-btn{
+                background-color: #666666   !important; 
+                margin-left:155px !important;
+            }
+            .form-field{
+                padding-left: 25px !important; 
+                margin-top:10px !important;
+                margin-bottom:10px !important;
+            }
+
+            .form-field #text-area{
+                border-color: #ffffff !important;
+                height: 100px !important; 
+                width: 75% !important; 
+                margin-left:35px !important; 
+            }
+
+            .btn-area{
+                width: 100% !important;
+                height: 100%!important;
+                margin-top:100px !important;
+            }
+            .form-field .ui-slider-switch{
+                margin-left:75px !important; 
+            }
+            /* First breakpoint at 414px iphon 6  */
+            @media all and (max-width: 23.4375em){
+                .btn-area .ui-btn{
+                    margin-left:135px !important;
+                }
+            }
+
+            /* First breakpoint at 414px iphon 5  */
+            @media all and (max-width: 20em){
+                .form-field #text-area{
+                    height: 100px !important; 
+                    width: 100% !important; 
+                    margin-left:0px !important; 
+                }
+                .btn-area .ui-btn{
+                    margin-left:100px !important;
+                }
+            }
+
+            /* First breakpoint at 414px ipad Landscape  */
+            @media screen and (min-device-width: 1024px)  and (orientation : landscape){
+                .header-area{
+                    height: 70px!important;
+                }
+                .navbar .ul-link{
+                    height: 70px!important;
+                    font-size: 24px !important;
+                }
+                .container{
+                    height: 500px !important;
+                }
+
+                .btn-area{
+                    margin-top:10px !important;
+                }
+                .form-field{
+                    margin-bottom: 50px !important; 
+                }
+                .form-field label{
+                    font-size: 27px !important; 
+                    margin-left: 122px !important;
+                }
+
+                .btn-area .ui-btn{
+                    width: 125px   !important; 
+                    margin-left:425px !important;
+                    font-size: 24px !important; 
+                }
+                .form-field #text-area{
+                    height: 200px !important; 
+                    /*width: 100% !important;*/ 
+                    margin-left:120px !important; 
+                }
+
+                .form-field .ui-slider-switch{
+                    font-size: 24px !important; 
+                    /*width:25% !important;*/ 
+                    height:100% !important; 
+                    margin-left:410px !important; 
+                }
+                 .ui-btn ui-shadow{
+                    font-size: 24px !important; 
+                    /*width:25% !important;*/ 
+                    height:100px !important; 
+                    margin-left:410px !important; 
+                }
+                .form-field span{
+                    font-size: 24px !important; 
+                    /*                    width:120px !important; 
+                                        height:40px !important; */
+                    /*margin-left:120px !important;*/ 
+                }
+            }
+        </style>
+    </head>
+    <body>
+
+
+        <div data-role="page" data-theme="b" id="destpoipage" >
+
+            <div class="my-page">
+                <!--header navigation area starts-->
+                <div data-role="header" data-position="fixed" class="header-area">
+                    <h1>SETTINGS</h1>
+                    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left">Back</a>
+                    <a href="#options-push" class="ui-btn ui-corner-all ui-shadow ui-btn-icon-left ui-icon-gear ui-btn-icon-notext">Options</a>
+                    <div data-role="navbar" class="navbar">
+                        <ul>
+                            <li><a href="#" class="fa fa-certificate" aria-hidden="true"> 2300 </a></li>
+                            <li><a href="#" class="fa fa-check-square" aria-hidden="true"> 10/25 </a></li>
+                            <li><a href="#" class="fa fa-bars" aria-hidden="true"> Menu</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--header navigation area ends-->
+
+                <!--content are starts-->
+                <!--<h3 class="custom-center-wrapper" style="font-size:25px;" >Places Of Intrest</h3>-->
+                <!--<div id="line"></div>-->
+                <div class="ui-content" role="main">
+
+                    <!--form area-->
+                    <div class="ui-grid-solo form-area">
+                        <!--  <div class="ui-field-contain ">-->
+                        <!--<fieldset>-->
+                        <div data-role="fieldcontain" class="container">
+                            <div class="form-field">
+                                <label for="slider-flip-m"  >Subscribe to our newsletter :</label>
+                                <select name="slider-flip-m" id="slider-flip-m" data-role="slider" data-mini="true" class="input-feild">
+                                    <option value="off">No</option>
+                                    <option value="on" selected="">Yes</option>
+                                </select>
+                            </div>
+
+
+                            <div class="form-field">
+                                <label for="slider-flip-m" >Allow notifications :</label>
+                                <select name="slider-flip-m" id="slider-flip-m" data-role="slider" data-mini="true" class="input-feild">
+                                    <option value="off">No</option>
+                                    <option value="on" selected="">Yes</option>
+                                </select>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="textarea">Give your feedback:</label>
+                                <textarea cols="40" rows="8" name="textarea" id="text-area" class="input-feild"></textarea>
+                            </div>
+                        </div>
+                        <!--</fieldset>-->
+                        <!--</div>-->
+                        <div class="btn-area">
+                            <input type="submit" data-inline="true" value="Submit" class="input-feild btnsubmit"></div>
+                    </div>
+                    <!--form area ends-->
+
+                </div>
+                <!--content area ends-->
+
+                <!--footer navigation area starts-->
+                <div data-role="footer" data-position="fixed">
+                    <div data-role="navbar">
+                        <ul>
+                            <li><a href="#" class="fa fa-user-circle"></a></li>
+                            <li><a href="#" class="fa fa-map" ></a></li>
+                            <li><a href="#" class="fa fa-certificate"></a></li>
+                            <li><a href="#" class="fa fa-calendar-check-o"></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Options Panel -->
+            <div data-role="panel" id="options-push" data-display="push" data-position="right">
+                <ul data-role="listview">
+                    <li><a href="#" class="fa fa-cog"> App Settings</a></li>
+                    <li><a href="#" class="fa fa-envelope"> Subscriptions</a></li>
+                    <li><a href="#" class="fa fa-info-circle" > About</a></li>
+                </ul>
+                <br><br>
+                <button data-rel="close" class="ui-btn ui-corner-all ui-shadow">
+                    Close <i class="fa fa-times-circle" aria-hidden="true"></i>
+                </button>
+            </div>
+
+        </div>
+
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.mobile-1.4.5.min.js"></script>
+        <script src="js/scripts.js"></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Station|Brain Train</title>
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css">
+        <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/listview-grid.css">
+        <link rel="stylesheet" href="css/styles.css">
+
+        <style type="text/css">
+
+            .ins-area{
+                /*height: 100px;*/
+                border: 5px !important;
+                border-color: darkgoldenrod !important;
+                background-color: black !important;
+
+            }
+            .info li{
+                text-align: justify;
+                line-height: 1.5em;
+                list-style-type:disc;
+                margin-left: -10px;
+            }
+            /*            #line{
+                            margin-bottom: -30px !important;
+                        }*/
+
+
+            /* First breakpoint at 414px iphon 6 plus */
+            @media all and (max-width: 25.875em){
+                /*station page styles*/
+                .ins-area{
+                    list-style-position:inside;
+                    border: 2px solid darkgoldenrod !important;
+                    height: 200px !important;
+                    width: 343px !important;
+                    border-color: darkgoldenrod !important;
+                    margin-bottom: 20px !important;
+                    border-radius: 25px !important;
+                    overflow: scroll;
+                }
+                .reward{
+                    margin-left: 30px !important;
+                }
+                .reward li .gld{    
+                    margin-left: 25px;
+                }
+                .reward li .sil{    
+                    margin-left: 20px;
+                }
+                .reward li .brn{    
+                    margin-left: 12px;
+                }
+            }
+            /* First breakpoint at 414px iphon 6  */
+            @media all and (max-width: 23.4375em){
+                /*station page styles*/
+                .ins-area{
+                    list-style-position:inside;
+                    border: 2px solid darkgoldenrod !important;
+                    height: 150px !important;
+                    width: 306px !important;
+                    border-color: darkgoldenrod !important;
+                    margin-bottom: 20px !important;
+                    border-radius: 25px !important;
+                    overflow: scroll;
+                }
+
+                .info li{
+                    line-height: 1em !important;
+                    list-style-type:disc!important;
+                    margin-left: -10px !important;
+                    font-size: 15px;
+
+                } 
+                .reward{
+                    margin-left: 25px;
+                }
+                .reward li .gld{    
+                    margin-left: 25px;
+                }
+                .reward li .sil{    
+                    margin-left: 20px;
+                }
+                .reward li .brn{    
+                    margin-left: 12px;
+                }
+            }
+            /* First breakpoint at 414px iphon 5  */
+            @media all and (max-width: 20em){
+                /*station page styles*/
+                .ins-area{
+                    list-style-position:inside;
+                    border: 2px solid darkgoldenrod !important;
+                    height: 120px !important;
+                    width: 253px !important;
+                    border-color: darkgoldenrod !important;
+                    margin-bottom: 20px !important;
+                    border-radius: 25px !important;
+                    overflow: scroll;
+                }
+                .info{
+                    padding-left: -10px !important;
+                }
+                .info li{
+                    font-size: 12px !important;
+                    line-height: 1.25em !important;
+                    list-style-type:disc!important;
+                    font-size: 12px;
+                    text-overflow: ellipsis;
+                }
+                .reward{
+                    margin-left: 25px;
+                }
+                .reward li .gld{    
+                    margin-left: 25px;
+                }
+                .reward li .sil{    
+                    margin-left: 20px;
+                }
+                .reward li .brn{    
+                    margin-left: 12px;
+                }
+            }
+            /*station page style ends*/
+            /* First breakpoint at 414px ipad Landscape  */
+            @media screen and (max-device-width: 1024px)  and (orientation : landscape){
+                .ins-area{
+                    list-style-position:inside;
+                    border: 4px solid darkgoldenrod !important;
+                    height: 171px !important;
+                    width: 940px !important;
+                    border-color: darkgoldenrod !important;
+                    margin-bottom: 20px !important;
+                    border-radius: 25px !important;
+                    overflow: scroll;
+                }
+                .ins-area{
+                    /*text-align: center !important;*/
+
+                }
+                .info{
+                    display: none!important;
+                }
+                .info-land{
+                    display: block!important;
+                    margin-left: 90px !important;
+                }
+
+                .info-land li{
+                    height: 20px !important;
+                    width: 100% !important;
+                    line-height: 1.5em !important;
+                    list-style-type:disc !important;
+                    font-size: 20px !important;
+                }
+                h3,h4{
+                    font-size: 25px !important;
+                    margin-left: 30px !important;
+                }
+                .prereq li{
+                    margin-left: 134px !important;
+                    font-size: 22px !important;
+                    line-height: 1.5em !important;
+
+                }
+                .reward{
+                    margin-left: 399px !important;
+                    font-size: 20px !important;
+                    line-height: 1.5em !important;
+
+                }
+                .reward li .gld{    
+                    margin-left: 25px;
+                }
+                .reward li .sil{    
+                    margin-left: 20px;
+                }
+                .reward li .brn{    
+                    margin-left: 12px;
+                }
+            }
+        </style>
+
+    </head>
+    <body>
+
+
+        <div data-role="page" data-theme="b" id="destpoipage" >
+
+            <div class="my-page">
+                <!--header navigation area starts-->
+                <div data-role="header" data-position="fixed" >
+                    <h1>ACHIEVEMENTS</h1>
+                    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left">Back</a>
+                    <a href="#options-push" class="ui-btn ui-corner-all ui-shadow ui-btn-icon-left ui-icon-gear ui-btn-icon-notext">Options</a>
+                    <div data-role="navbar">
+                        <ul>
+                            <li><a href="#" class="fa fa-certificate" aria-hidden="true"> 2300 </a></li>
+                            <li><a href="#" class="fa fa-check-square" aria-hidden="true"> 10/25 </a></li>
+                            <li><a href="#" class="fa fa-bars" aria-hidden="true"> Menu</a></li>
+                        </ul>
+                    </div>
+                    <!--                    <h3 class="custom-center-wrapper" style="font-size:18px;" id="station">King Cross Station</h3>
+                                        <div id="line"></div>-->
+                </div>
+                <!--header navigation area ends-->
+
+                <!--content are starts-->
+
+                <div class="ui-content" role="main">
+
+                    <!--form area-->
+                    <div class="ui-grid-solo form-area">
+                        <!--  <div class="ui-field-contain ">-->
+                        <!--<fieldset>-->
+                         <ul data-role="listview" data-inset="true"  data-position="fixed" id="list">
+                            <li style="width: 100%" class="ins-area">
+                                <h4 style="text-align: center;">Instructions</h4>
+                                <ul style="" class="info">
+                                    <li> Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit. Vivamus gravida feugiat.</li>
+                                    <li> Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit. Vivamus gravida feugiat.</li>
+                                    <li> Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit. Vivamus gravida feugiat.</li>
+                                    <li> Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit. Vivamus gravida feugiat.</li>
+                                    <li> Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit. Vivamus gravida feugiat.</li>
+                                </ul>
+                                <ul style="display: none" class="info-land">
+                                    <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus gravida feugiat.</li>
+                                    <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus gravida feugiat.</li>
+                                    <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus gravida feugiat.</li>
+                                    <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus gravida feugiat.</li>
+                                    <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus gravida feugiat.</li>
+                                </ul>
+                            </li>
+
+                        </ul>
+
+                        <h3>Prerequisites</h3>
+                        <ul class="prereq">
+                            <li>"Time Trail" Challenge.</li>
+                            <li>"Dead men tell no lies" Challenge.</li>
+                        </ul>
+
+                        <h3>Rewards</h3>
+                        <ul class="reward" style="list-style-type: none;">
+                            <li>Gold 
+                                <span class="gld">
+                                    <i class="fa fa-star gold" aria-hidden="true" style="color: gold"></i>
+                                    <i class="fa fa-star gold" aria-hidden="true" style="color: gold"></i>
+                                    <i class="fa fa-star gold" aria-hidden="true" style="color: gold"></i>
+                                </span></li>
+                            <li>Silver
+                                <span class="sil">
+                                    <i class="fa fa-star gold" aria-hidden="true" style="color: silver"></i>
+                                    <i class="fa fa-star gold" aria-hidden="true" style="color: silver"></i>
+                                    <i class="fa fa-star gold" aria-hidden="true" style="color: silver"></i>
+                                </span></li>
+                            <li>bronze
+                                <span class="brn">
+                                    <i class="fa fa-star gold" aria-hidden="true" style="color: brown"></i>
+                                    <i class="fa fa-star gold" aria-hidden="true" style="color: brown"></i>
+                                    <i class="fa fa-star gold" aria-hidden="true" style="color: brown"></i>
+                                </span></li>
+                        </ul>
+                        <ul class="prereq">
+                            <li>"Time Trail" Challenge.</li>
+                            <li>"Dead men tell no lies" Challenge.</li>
+                        </ul>
+
+                    </div>
+                    <!--form area ends-->
+
+                </div>
+                <!--content area ends-->
+
+                <!--footer navigation area starts-->
+                <div data-role="footer" data-position="fixed" id="footer">
+                    <div data-role="navbar">
+                        <ul>
+                            <li><a href="#" class="fa fa-user-circle"></a></li>
+                            <li><a href="#" class="fa fa-map" ></a></li>
+                            <li><a href="#" class="fa fa-certificate"></a></li>
+                            <li><a href="#" class="fa fa-calendar-check-o"></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Options Panel -->
+            <div data-role="panel" id="options-push" data-display="push" data-position="right">
+                <ul data-role="listview">
+                    <li><a href="#" class="fa fa-cog"> App Settings</a></li>
+                    <li><a href="#" class="fa fa-envelope"> Subscriptions</a></li>
+                    <li><a href="#" class="fa fa-info-circle" > About</a></li>
+                </ul>
+                <br><br>
+                <button data-rel="close" class="ui-btn ui-corner-all ui-shadow">
+                    Close <i class="fa fa-times-circle" aria-hidden="true"></i>
+                </button>
+            </div>
+
+        </div>
+
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.mobile-1.4.5.min.js"></script>
+        <script src="js/scripts.js"></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>London's Eye-Gallery</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/listview-grid.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+
+<div data-role="page" data-theme="b" id="destpoipage" >
+
+	<div class="my-page">
+
+		<div data-role="header" data-position="fixed" >
+			<h1>LONDON'S EYE</h1>
+			<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left">Back</a>
+			<a href="#options-push" class="ui-btn ui-corner-all ui-shadow ui-btn-icon-left ui-icon-gear ui-btn-icon-notext">Options</a>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#" class="fa fa-certificate" aria-hidden="true"> 2300 </a></li>
+					<li><a href="#" class="fa fa-check-square" aria-hidden="true"> 10/25 </a></li>
+					<li><a href="#" class="fa fa-bars" aria-hidden="true"> Leaderboard</a></li>
+				</ul>
+			</div>
+			<h3 class="custom-center-wrapper" style="font-size:18px;">Image Gallery</h3>
+			<div id="line"></div>			
+		</div>	
+		
+		<div class="ui-content" role="main">
+			<ul data-role="listview" data-inset="true">
+				<li><a href="#popupPhotoPortrait1" data-rel="popup" data-transition="fade">
+					<img src="images/eye-capsule.jpg" class="ui-li-thumb">
+					<h2>Capsuled</h2>
+				</a></li>
+				<li><a href="#popupPhotoPortrait2" data-rel="popup" data-transition="fade">
+					<img src="images/Eye-Inside.jpg" class="ui-li-thumb">
+					<h2>Inside 1</h2>
+				</a></li>
+				<li><a href="#popupPhotoPortrait3" data-rel="popup" data-transition="fade">
+					<img src="images/Eye-Twilight.jpg" class="ui-li-thumb">
+					<h2>Seasonal </h2>
+				</a></li>
+				<li><a href="#popupPhotoPortrait4" data-rel="popup" data-transition="fade">
+					<img src="images/london-eye.jpg" class="ui-li-thumb">
+					<h2>Day Bliss </h2>
+				</a></li>
+				<li><a href="#popupPhotoPortrait5" data-rel="popup" data-transition="fade">
+					<img src="images/eye-at-night.jpg" class="ui-li-thumb">
+					<h2>Festive Night</h2>
+				</a></li>
+				<li><a href="#popupPhotoPortrait6" data-rel="popup" data-transition="fade">
+					<img src="images/london-eye-inside.jpg" class="ui-li-thumb">
+					<h2>Inside 2</h2>
+				</a></li>
+			</ul>
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#" class="fa fa-user-circle"> Profile</a></li>
+					<li><a href="#" class="fa fa-map" > Map</a></li>
+					<li><a href="#" class="fa fa-trophy"> Rewards</a></li>
+					<li><a href="reservationsAll.html" data-transition="fade" class="fa fa-calendar-check-o"> Journeys</a></li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+	
+	<!-- Gallery Image popups -->
+	<div data-role="popup" id="popupPhotoPortrait1" class="photopopup" data-overlay-theme="b" data-corners="false" data-tolerance="30,15">
+		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="images/eye-capsule.jpg" alt="Photo portrait">
+	</div>
+	<div data-role="popup" id="popupPhotoPortrait2" class="photopopup" data-overlay-theme="b" data-corners="false" data-tolerance="30,15">
+		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="images/Eye-Inside.jpg" alt="Photo portrait">
+	</div>	
+	<div data-role="popup" id="popupPhotoPortrait3" class="photopopup" data-overlay-theme="b" data-corners="false" data-tolerance="30,15">
+		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="images/Eye-Twilight.jpg" alt="Photo portrait">
+	</div>
+	<div data-role="popup" id="popupPhotoPortrait4" class="photopopup" data-overlay-theme="b" data-corners="false" data-tolerance="30,15">
+		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="images/london-eye.jpg" alt="Photo portrait">
+	</div>
+	<div data-role="popup" id="popupPhotoPortrait5" class="photopopup" data-overlay-theme="b" data-corners="false" data-tolerance="30,15">
+		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="images/eye-at-night.jpg" alt="Photo portrait">
+	</div>
+	<div data-role="popup" id="popupPhotoPortrait6" class="photopopup" data-overlay-theme="b" data-corners="false" data-tolerance="30,15">
+		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="images/london-eye-inside.jpg" alt="Photo portrait">
+	</div>
+	
+	<!-- Options Panel -->
+	<div data-role="panel" id="options-push" data-display="push" data-position="right">
+		<ul data-role="listview">
+			<li><a href="settings.html" class="fa fa-cog"> App Settings</a></li>
+			<li><a href="#" class="fa fa-envelope"> Subscriptions</a></li>
+			<li><a href="#" class="fa fa-info-circle" > About</a></li>
+		</ul>
+		<br><br>
+		<button data-rel="close" class="ui-btn ui-corner-all ui-shadow">
+			Close <i class="fa fa-times-circle" aria-hidden="true"></i>
+		</button>
+	</div>
+
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/scripts.js"></script>
+
+	
+</body>
+</html>

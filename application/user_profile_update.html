@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Default theme - Brain Train Demo</title>
+	<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/mystyles.css">
+	<link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+
+<!-- page -->
+<div data-role="page" data-theme="b" id="testpage">
+
+	<!-- header -->
+	<div class="my-title-header" data-role="header" data-position="fixed">
+		<h1 class="my-ui-title" >My Profile</h1>
+			<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left">Back</a>
+			<a href="#options-push" class="ui-btn ui-corner-all ui-shadow ui-btn-icon-left ui-icon-gear ui-btn-icon-notext">Options</a>
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#" class="fa fa-certificate" aria-hidden="true"> 2300 </a></li>
+				<li><a href="#" class="fa fa-check-square" aria-hidden="true"> 10/25 </a></li>
+				<li><a href="#" class="fa fa-bars" aria-hidden="true"> Menu</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /header -->		
+	
+	
+	<div class="ui-content" role="main">
+	
+		<!-- Content -->
+		
+		<div class="ui-body ui-body-a ui-corner-all my-ui-block-white">
+			
+			<!-- About Me Content -->
+			<div>
+			
+				<div class="my-text-heading my-text-heading-iphone">
+					Personal Info
+				</div>
+				
+				<div class="my-text-content my-text-content-iphone">
+					User Name
+					<div>
+						<input type="text" name="name2" id="name2" value="" data-clear-btn="true">
+					</div>
+				</div>
+				
+				<div class="my-text-content my-text-content-iphone">
+					Email
+					<div>
+						<input type="text" name="name2" id="name2" value="" data-clear-btn="true">
+					</div>
+				</div>
+				
+				<div class="my-text-content my-text-content-iphone">
+					Phone
+					<div>
+						<input type="text" name="name2" id="name2" value="" data-clear-btn="true">
+					</div>
+				</div>
+				
+				<div class="my-text-content my-text-content-iphone">
+					Date of Birth
+					<div>
+						<input type="date">
+					</div>
+				</div>
+				
+				<div class="my-text-content my-text-content-iphone">
+					Street Addresss
+					<div>
+						<input type="text" name="name2" id="name2" value="" data-clear-btn="true">
+					</div>
+				</div>
+				
+				<div class="my-text-content my-text-content-iphone">
+					City
+					<div>
+						<input type="text" name="name2" id="name2" value="" data-clear-btn="true">
+						<!-- <div style="margin-top: -2em; margin-bottom: -1em;" class="ui-field-contain">
+						    <select name="select-native-1" id="select-native-1">
+						        <option value="">London</option>
+								<option value="">Birmingham</option>
+								<option value="">Leeds</option>
+								<option value="">Glasgow</option>
+								<option value="">Sheffield</option>
+								<option value="">Bradford</option>
+								<option value="">Liverpool</option>
+								<option value="">Edinburgh</option>
+								<option value="">Manchester</option>
+								<option value="">Bristol</option>
+								<option value="">Kirklees</option>
+								<option value="">Fife</option>
+								<option value="">Wirral</option>
+								<option value="">North Lanarkshire</option>
+								<option value="">Wakefield</option>
+								<option value="">Cardiff</option>
+								<option value="">Dudley</option>
+								<option value="">Wigan</option>
+								<option value="">East Riding</option>
+								<option value="">South Lanarkshire</option>
+								<option value="">Coventry</option>
+								<option value="">Belfast</option>
+								<option value="">Leicester</option>
+								<option value="">Sunderland</option>
+								<option value="">Sandwell</option>
+								<option value="">Doncaster</option>
+								<option value="">Stockport</option>
+								<option value="">Sefton</option>
+								<option value="">Nottingham</option>
+								<option value="">Newcastle-upon-Tyne</option>
+								<option value="">Kingston-upon-Hull</option>
+								<option value="">Bolton</option>
+								<option value="">Walsall</option>
+								<option value="">Plymouth</option>
+								<option value="">Rotherham</option>
+								<option value="">Stoke-on-Trent</option>
+								<option value="">Wolverhampton</option>
+								<option value="">Rhondda Cynon Taff</option>
+								<option value="">South Gloucestershire</option>
+								<option value="">Derby</option>
+								<option value="">Swansea</option>
+								<option value="">Salford</option>
+								<option value="">Aberdeenshire</option>
+								<option value="">Barnsley</option>
+								<option value="">Tameside</option>
+								<option value="">Oldham</option>
+								<option value="">Trafford</option>
+								<option value="">Aberdeen</option>
+								<option value="">Southampton</option>
+								<option value="">Highland</option>
+								<option value="">Rochdale</option>
+								<option value="">Solihull</option>
+								<option value="">Gateshead</option>
+								<option value="">Milton Keynes</option>
+								<option value="">North Tyneside</option>
+								<option value="">Calderdale</option>
+								<option value="">Northampton</option>
+								<option value="">Portsmouth</option>
+								<option value="">Warrington</option>
+								<option value="">North Somerset</option>
+								<option value="">Bury</option>
+								<option value="">Luton</option>
+								<option value="">St Helens</option>
+								<option value="">Stockton-on-Tees</option>
+								<option value="">Renfrewshire</option>
+								<option value="">York</option>
+								<option value="">Thamesdown</option>
+								<option value="">Southend-on-Sea</option>
+								<option value="">New Forest</option>
+								<option value="">Caerphilly</option>
+								<option value="">Carmarthenshire</option>
+								<option value="">Bath & North East Somerset</option>
+								<option value="">Wycombe</option>
+								<option value="">Basildon</option>
+								<option value="">Bournemouth</option>
+								<option value="">Peterborough</option>
+								<option value="">North East Lincolnshire</option>
+								<option value="">Chelmsford</option>
+								<option value="">Brighton</option>
+								<option value="">South Tyneside</option>
+								<option value="">Charnwood</option>
+								<option value="">Aylesbury Vale</option>
+								<option value="">Colchester</option>
+								<option value="">Knowsley</option>
+								<option value="">North Lincolnshire</option>
+								<option value="">Huntingdonshire</option>
+								<option value="">Macclesfield</option>
+								<option value="">Blackpool</option>
+								<option value="">West Lothian</option>
+								<option value="">South Somerset</option>
+								<option value="">Dundee</option>
+								<option value="">Basingstoke & Deane</option>
+								<option value="">Harrogate</option>
+								<option value="">Dumfries & Galloway</option>
+								<option value="">Middlesbrough</option>
+								<option value="">Flintshire</option>
+								<option value="">Rochester-upon-Medway</option>
+								<option value="">The Wrekin</option>
+								<option value="">Newbury</option>
+								<option value="">Falkirk</option>
+								<option value="">Reading</option>
+								<option value="">Wokingham</option>
+								<option value="">Windsor & Maidenhead</option>
+								<option value="">Maidstone</option>
+								<option value="">Redcar & Cleveland</option>
+								<option value="">North Ayrshire</option>
+								<option value="">Blackburn</option>
+								<option value="">Neath Port Talbot</option>
+								<option value="">Poole</option>
+								<option value="">Wealden</option>
+								<option value="">Arun</option>
+								<option value="">Bedford</option>
+								<option value="">Oxford</option>
+								<option value="">Lancaster</option>
+								<option value="">Newport</option>
+								<option value="">Canterbury</option>
+								<option value="">Preston</option>
+								<option value="">Dacorum</option>
+								<option value="">Cherwell</option>
+								<option value="">Perth & Kinross</option>
+								<option value="">Thurrock</option>
+								<option value="">Tendring</option>
+								<option value="">Kings Lynn & West Norfolk</option>
+								<option value="">St Albans</option>
+								<option value="">Bridgend</option>
+								<option value="">South Cambridgeshire</option>
+								<option value="">Braintree</option>
+								<option value="">Norwich</option>
+								<option value="">Thanet</option>
+								<option value="">Isle of Wight</option>
+								<option value="">Mid Sussex</option>
+								<option value="">South Oxfordshire</option>
+								<option value="">Guildford</option>
+								<option value="">Elmbridge</option>
+								<option value="">Stafford</option>
+								<option value="">Powys</option>
+								<option value="">East Hertfordshire</option>
+								<option value="">Torbay</option>
+								<option value="">Wrexham Maelor</option>
+								<option value="">East Devon</option>
+								<option value="">East Lindsey</option>
+								<option value="">Halton</option>
+								<option value="">Warwick</option>
+								<option value="">East Ayrshire</option>
+								<option value="">Newcastle-under-Lyme</option>
+								<option value="">North Wiltshire</option>
+								<option value="">South Kesteven</option>
+								<option value="">Epping Forest</option>
+								<option value="">Vale of Glamorgan</option>
+								<option value="">Reigate & Banstead</option>
+								<option value="">Chester</option>
+								<option value="">Mid Bedfordshire</option>
+								<option value="">Suffolk Coastal</option>
+								<option value="">Horsham</option>
+								<option value="">Nuneaton & Bedworth</option>
+								<option value="">Gwynedd</option>
+								<option value="">Swale</option>
+								<option value="">Havant & Waterloo</option>
+								<option value="">Teignbridge</option>
+								<option value="">Cambridge</option>
+								<option value="">Vale Royal</option>
+								<option value="">Amber Valley</option>
+								<option value="">North Hertfordshire</option>
+								<option value="">South Ayrshire</option>
+								<option value="">Waverley</option>
+								<option value="">Broadland</option>
+								<option value="">Crewe & Nantwich</option>
+								<option value="">Breckland</option>
+								<option value="">Ipswich</option>
+								<option value="">Pembrokeshire</option>
+								<option value="">Vale of White Horse</option>
+								<option value="">Salisbury</option>
+								<option value="">Gedling</option>
+								<option value="">Eastleigh</option>
+								<option value="">Broxtowe</option>
+								<option value="">Stratford-on-Avon</option>
+								<option value="">South Bedfordshire</option>
+								<option value="">Angus</option>
+								<option value="">East Hampshire</option>
+								<option value="">East Dunbartonshire</option>
+								<option value="">Conway</option>
+								<option value="">Sevenoaks</option>
+								<option value="">Slough</option>
+								<option value="">Bracknell Forest</option>
+								<option value="">West Lancashire</option>
+								<option value="">West Wiltshire</option>
+								<option value="">Ashfield</option>
+								<option value="">Lisburn</option>
+								<option value="">Scarborough</option>
+								<option value="">Stroud</option>
+								<option value="">Wychavon</option>
+								<option value="">Waveney</option>
+								<option value="">Exeter</option>
+								<option value="">Dover</option>
+								<option value="">Test Valley</option>
+								<option value="">Gloucester</option>
+								<option value="">Erewash</option>
+								<option value="">Cheltenham</option>
+								<option value="">Bassetlaw</option>
+								<option value="">Scottish Borders</option>
+						    </select>
+						</div> -->
+					</div>
+				</div>
+				
+				<div class="my-text-content my-text-content-iphone">
+					Country
+					<div>
+						<input type="text" name="name2" id="name2" value="" data-clear-btn="true">
+						<!-- <div style="margin-top: -2em; margin-bottom: -1em;" class="ui-field-contain">
+						    <select name="select-native-1" id="select-native-1">
+						        <option value="">Albania</option>
+								<option value="">Andorra</option>
+								<option value="">Armenia</option>
+								<option value="">Austria</option>
+								<option value="">Azerbaijan</option>
+								<option value="">Belarus</option>
+								<option value="">Belgium</option>
+								<option value="">Bosnia and Herzegovina</option>
+								<option value="">Bulgaria</option>
+								<option value="">Croatia</option>
+								<option value="">Cyprus</option>
+								<option value="">Czech Republic</option>
+								<option value="">Denmark</option>
+								<option value="">Estonia</option>
+								<option value="">Finland</option>
+								<option value="">France</option>
+								<option value="">Georgia</option>
+								<option value="">Germany</option>
+								<option value="">Greece</option>
+								<option value="">Hungary</option>
+								<option value="">Iceland</option>
+								<option value="">Irelan</option>
+								<option value="">Italy</option>
+								<option value="">Kazakhstan</option>
+								<option value="">Kosovo</option>
+								<option value="">Latvia</option>
+								<option value="">Liechtenstein</option>
+								<option value="">Lithuania</option>
+								<option value="">Luxembourg</option>
+								<option value="">Macedonia</option>
+								<option value="">Malta</option>
+								<option value="">Moldova</option>
+								<option value="">Monaco</option>
+								<option value="">Montenegro</option>
+								<option value="">Netherlands</option>
+								<option value="">Norway</option>
+								<option value="">Poland</option>
+								<option value="">Portugal</option>
+								<option value="">Romania</option>
+								<option value="">Russia</option>
+								<option value="">San Marino</option>
+								<option value="">Serbia</option>
+								<option value="">Slovakia</option>
+								<option value="">Slovenia</option>
+								<option value="">Spain</option>
+								<option value="">Sweden</option>
+								<option value="">Switzerland</option>
+								<option value="">Turkey</option>
+								<option value="">Ukraine</option>
+								<option value="">United Kingdom (UK)</option>
+								<option value="">Vatican City</option>
+						    </select>
+						</div> -->
+					</div>
+				</div>
+				
+			</div>
+			
+		</div>	
+
+		<div style="margin-top : 10px; background-color : #353740 !important" class="ui-body ui-body-a ui-corner-all my-ui-block-white">
+			
+			<div>
+				<div style="width: 100px; margin: 0 auto; float: left;">
+					<a href="user_profile.html" style="height: 5px; width: 46px;" class="ui-btn my-ui-input-btn my-ui-input-btn-iphone ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-right ui-nodisc-icon">
+						<div style="margin-top: -7px;">
+							Cancel
+						</div>
+					</a>
+				</div>
+				
+				<div style="width: 100px; margin: 0 auto; float: right;">
+					<a href="user_profile.html" style="height: 5px; width: 46px;" class="ui-btn my-ui-input-btn my-ui-input-btn-iphone ui-shadow ui-corner-all ui-icon-check ui-btn-icon-right ui-nodisc-icon">
+						<div style="margin-top: -7px;">
+							Save
+						</div>
+					</a>
+				</div>
+			</div>
+			
+		</div>		
+		
+		<!-- /Content -->
+
+		<!-- footer -->
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#" data-ajax="false" class="fa fa-address-card"></a></li>
+					<li><a href="#" class="fa fa-credit-card" ></a></li>
+					<li><a href="#" class="fa fa-heart"></a></li>
+				</ul>
+			</div>
+			<h4 style="display:none;">Footer</h4>
+		</div>
+		<!-- /footer -->
+		
+	<!-- Options Panel -->
+	<div data-role="panel" id="options-push" data-display="push" data-position="right">
+		<ul data-role="listview">
+			<li><a href="settings.html" class="fa fa-cog"> App Settings</a></li>
+			<li><a href="#" class="fa fa-envelope"> Subscriptions</a></li>
+			<li><a href="#" class="fa fa-info-circle" > About</a></li>
+		</ul>
+		<br><br>
+		<button data-rel="close" class="ui-btn ui-corner-all ui-shadow">
+			Close <i class="fa fa-times-circle" aria-hidden="true"></i>
+		</button>
+	</div>		
+	
+	</div>
+	<!-- /page -->
+
+<script src="js/jquery.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/jquery.js"></script>
+
+</body>
+</html>
+		
+		

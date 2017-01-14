@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Reservations</title>
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css">
+        <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/listview-grid.css">
+        <link rel="stylesheet" href="css/styles.css">
+        
+        <style>
+            .fc-agendaWeek-view tr {
+                height: 40px;
+            }
+
+            .fc-agendaMonth-view tr {
+                height: 40px;
+            }
+            .fc-agenda-slots td div {
+                height: 100px !important;
+            }
+
+            .summary-field{
+                font-size:25px !important;
+            }
+
+            @media only screen and (max-width: 415px) {
+                .summary-field-phone{
+                    font-size:10px !important;
+                }
+            }
+
+        </style>
+
+    </head>
+    <body>
+
+
+        <div data-role="page" data-theme="b" id="destpoipage" >
+
+            <div class="my-page">
+
+                <div data-role="header" data-position="fixed" >
+                    <h1>Places of Interest</h1>
+                    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left">Back</a>
+                    <a href="#options-push" class="ui-btn ui-corner-all ui-shadow ui-btn-icon-left ui-icon-gear ui-btn-icon-notext">Options</a>
+                    <div data-role="navbar">
+                        <ul>
+                            <li><a href="#" class="fa fa-certificate" aria-hidden="true"> 2300 </a></li>
+                            <li><a href="#" class="fa fa-check-square" aria-hidden="true"> 10/25 </a></li>
+                            <li><a href="#" class="fa fa-bars" aria-hidden="true"> Menu</a></li>
+                        </ul>
+                    </div>
+                    <h3 class="custom-center-wrapper" style="font-size:18px;">London Eye</h3>
+                    <div id="line"></div>	
+
+                </div>	
+
+                <div class="ui-content" role="main">
+
+                    <div>
+                        <img src="images/london-eye.jpg" class="ui-li-thumb" style="width: 100%; height:200px;" alt="">
+                        <div id="line"></div>
+                        <br/>
+                        <p class="summary-field summary-field-phone">
+                            The London Eye is a giant Ferris wheel on the South Bank of the River Thames in London. Also known as the Millennium Wheel, it has also been called by its owners the British Airways London Eye, then the Merlin Entertainments London Eye, then the EDF Energy London Eye. Since mid-January 2015, it has been known as the Coca-Cola London Eye, following an agreement signed in September 2014.[8]
+
+<br/>The structure is 443 feet (135 m) tall and the wheel has a diameter of 394 feet (120 m). When erected in 1999 it was the world's tallest Ferris wheel. Its height was surpassed by the 520 feet (158 m) tall Star of Nanchang in 2006, the 541 feet (165 m) tall Singapore Flyer in 2008, and the 550 feet (168 m) High Roller (Las Vegas) in 2014. Supported by an A-frame on one side only, unlike the taller Nanchang and Singapore wheels, the Eye is described by its operators as "the world's tallest cantilevered observation wheel"
+                        </p>
+
+
+                    </div>
+
+                    <div data-role="footer" data-position="fixed">
+                        
+                        <div data-role="navbar">
+                            <ul>
+                                <li><a href="destinationPOI_london.html" data-transition="slide" data-direction="reverse" class="fa fa-map" > POIs</a></li>
+                                <li><a href="#" class="fa fa-certificate"> Info</a> </li>
+                                <li><a href="destinationPOI_london_gallery.html" data-transition="slide" class="fa fa-calendar-check-o"> Gallery</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Options Panel -->
+                <div data-role="panel" id="options-push" data-display="push" data-position="right">
+                    <ul data-role="listview">
+                        <li><a href="#" class="fa fa-cog"> App Settings</a></li>
+                        <li><a href="#" class="fa fa-envelope"> Subscriptions</a></li>
+                        <li><a href="#" class="fa fa-info-circle" > About</a></li>
+                    </ul>
+                    <br><br>
+                    <button data-rel="close" class="ui-btn ui-corner-all ui-shadow">
+                        Close <i class="fa fa-times-circle" aria-hidden="true"></i>
+                    </button>
+                </div>
+
+            </div>
+
+
+            <script src="js/jquery.min.js"></script>
+            <script src="js/jquery.mobile-1.4.5.min.js"></script>
+            <script src="js/scripts.js"></script>
+            
+    </body>
+</html>

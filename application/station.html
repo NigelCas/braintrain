@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Station|Brain Train</title>
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css">
+        <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/listview-grid.css">
+        <link rel="stylesheet" href="css/styles.css">
+
+        <style type="text/css">
+
+            .img-area{
+                width: 100%;
+                height: 100px;
+                background-image: url('images/Kings_Cross.jpg');
+            }
+            #line{
+                margin-bottom: -30px !important;
+            }
+
+
+            /* First breakpoint at 414px iphon 6 plus */
+            @media all and (min-width: 25.875em){
+                /*station page styles*/
+                .ui-btn{
+                    margin-left: -18px !important;
+                    margin-top:  10px !important;
+                }
+                .img-area{
+                    width: 100%;
+                    height: 100px;
+                    background-image: url('images/Kings_Cross.jpg') !important;
+                }
+ 
+                .para-area {
+                    position: absolute;
+                    height: 150px !important;
+                    margin-top: 2px;
+                    margin-bottom: 2px;
+                    overflow: scroll !important;
+                    text-align: justify !important;
+                }
+                /*station page style ends*/
+            }
+            /* First breakpoint at 414px iphon 6  */
+            @media all and (min-width: 23.4375em){
+                /*station page styles*/
+                .ui-btn{
+                    margin-left: -20px !important;
+                    margin-top:  10px !important;
+                }
+                .img-area{
+                    width: 100%;
+                    height: 100px;
+                    background-image: url('images/Kings_Cross.jpg') !important;
+                }
+
+                .para-area {
+                    position: absolute;
+                    height: 150px !important;
+                    margin-top: 2px;
+                    margin-bottom: 2px;
+                    overflow: scroll !important;
+                    text-align: justify !important;
+                }
+                /*station page style ends*/
+            }
+            /* First breakpoint at 414px iphon 5  */
+            @media all and (min-width: 20em){
+                /*station page styles*/
+                .ui-btn{
+                    margin-left: -19px !important;
+                    margin-right: 20px !important;
+                    margin-top:  5px !important;
+                }
+                .img-area{
+                    width: 100%;
+                    height: 75px;
+                    background-image: url('images/Kings_Cross.jpg') !important;
+                }
+
+                .para-area {
+                    position: absolute;
+                    height: 75px !important;
+                    margin-top: 2px;
+                    margin-bottom: 2px;
+                    overflow: scroll !important;
+                    text-align: justify !important;
+                }
+            }
+            /*station page style ends*/
+            /* First breakpoint at 414px ipad Landscape  */
+            @media screen and (min-device-width: 1024px)  and (orientation : landscape){
+                #station{
+                    font-size: 32px!important;
+                }
+                #btn-area{
+                    height: 100% !important;
+                    width: 100% !important;
+                    text-align: center !important;
+                    /*                    height: 150px !important;*/
+                }
+                #btn-area .ui-btn{
+                    height: 50px !important;
+                    width: 550px!important;
+                    margin-left: 200px !important;
+                    /*margin-right: 40px !important;*/
+                    /*margin-top:  5px !important;*/
+                }
+                .img-area{
+                    width: 100% !important;
+                    height: 150px !important;
+                    background-image: url('images/Kings_Cross.jpg') !important;
+                }
+                .para-area{
+                    height: 125px !important;
+
+                }
+                .para-area p{
+                    text-align: justify !important;
+                    height: 100% !important;
+                    width: 100%;
+                    /*margin-left: -200px!important;*/
+                    left: 0px!important;
+                    background-color: inherit !important;
+                    overflow: scroll !important;
+                    font-size: 18px !important;
+                }
+
+                #footer{
+                    height: 40px !important;
+                }
+            }
+        </style>
+
+    </head>
+    <body>
+
+
+        <div data-role="page" data-theme="b" id="destpoipage" >
+
+            <div class="my-page">
+                <!--header navigation area starts-->
+                <div data-role="header" data-position="fixed" >
+                    <h1>STATION</h1>
+                    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left">Back</a>
+                    <a href="#options-push" class="ui-btn ui-corner-all ui-shadow ui-btn-icon-left ui-icon-gear ui-btn-icon-notext">Options</a>
+                    <div data-role="navbar">
+                        <ul>
+                            <li><a href="#" class="fa fa-certificate" aria-hidden="true"> 2300 </a></li>
+                            <li><a href="#" class="fa fa-check-square" aria-hidden="true"> 10/25 </a></li>
+                            <li><a href="#" class="fa fa-bars" aria-hidden="true"> Leaderboard</a></li>
+                        </ul>
+                    </div>
+                    <h3 class="custom-center-wrapper" style="font-size:18px;" id="station">King's Cross</h3>
+                    <div id="line"></div>
+                </div>
+                <!--header navigation area ends-->
+
+                <!--content are starts-->
+
+                <div class="ui-content" role="main">
+
+                    <!--form area-->
+                    <div class="ui-grid-solo form-area">
+                        <!--  <div class="ui-field-contain ">-->
+                        <!--<fieldset>-->
+                         <ul data-role="listview" data-inset="true"  data-position="fixed" id="list">
+                            <li style="width: 100%" class="img-area">
+                                <!-- <img src="images/Kings_Cross.jpg" class="ui-li-thumb" style="width: 100%" alt="">-->
+                            </li>
+                            <li style="width: 100%;" class="para-area">     
+                                <p class="ui-li-aside">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus gravida tortor feugiat sapien elementum, sit amet sodales mauris porta.<br>
+                                    Nunc a tristique tellus. Nam in purus ut risus ullamcorper cursus quis mollis justo.<br> Nam sem massa, fringilla eget odio eu, bibendum commodo sapien.<br>
+                                    Nam vitae dapibus eros. Cras ornare vitae diam in molestie.<br> Fusce quis ex maximus nulla lacinia mollis at vestibulum sapien. Etiam ac massa tempus, molestie orci eu, congue odio.<br>
+                                    Maecenas vel lacus in eros blandit ullamcorper vitae sit amet nunc.
+                                </p>
+                            </li>
+                            <li style="width: 100%" id="btn-area">
+                                <input type="submit" data-block="true" value="Reserve Tickets" class="input-feild btnsubmit" style="background: #ffffff" onclick="location.href='booking.html';">
+                                <input type="submit" data-block="true" value="Challenges" class="input-feild btnsubmit" style="background: #ffffff" onclick="location.href='questionaire_one.html';">
+                                <input type="submit" data-block="true" value="Places of interrest" class="input-feild btnsubmit" style="background: #ffffff" onclick="location.href='destinationPOI_london.html';">
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!--form area ends-->
+
+                </div>
+                <!--content area ends-->
+
+                <!--footer navigation area starts-->
+                <div data-role="footer" data-position="fixed" id="footer">
+                    <div data-role="navbar">
+                        <ul>
+                            <li><a href="user_profile.html" data-transition="slide" data-direction="reverse" class="fa fa-user-circle"></a></li>
+                            <li><a href="Home.html" data-transition="slide" data-direction="reverse" class="fa fa-map" ></a></li>
+                            <li><a href="achievement_cat.html" data-transition="slide" data-direction="reverse" class="fa fa-trophy"></a></li>
+                            <li><a href="reservationsAll.html" data-transition="slide" data-direction="reverse" class="fa fa-calendar-check-o"></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Options Panel -->
+            <div data-role="panel" id="options-push" data-display="push" data-position="right">
+                <ul data-role="listview">
+                    <li><a href="#" class="fa fa-cog"> App Settings</a></li>
+                    <li><a href="#" class="fa fa-envelope"> Subscriptions</a></li>
+                    <li><a href="#" class="fa fa-info-circle" > About</a></li>
+                </ul>
+                <br><br>
+                <button data-rel="close" class="ui-btn ui-corner-all ui-shadow">
+                    Close <i class="fa fa-times-circle" aria-hidden="true"></i>
+                </button>
+            </div>
+
+        </div>
+
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.mobile-1.4.5.min.js"></script>
+        <script src="js/scripts.js"></script>
+
+
+    </body>
+</html>

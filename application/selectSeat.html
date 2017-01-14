@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Reservations</title>
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css">
+        <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+
+        <style>
+            .fc-agendaWeek-view tr {
+                height: 40px;
+            }
+            .fc-agendaMonth-view tr {
+                height: 40px;
+            }
+            .fc-agenda-slots td div {
+                height: 100px !important;
+            }
+            
+            .custom-field{
+                font-size:17px !important;
+            }
+
+            @media only screen and (max-width: 415px) {
+                .custom-field-phone{
+                    font-size:13px !important;
+                }
+            }
+            
+            @media only screen and (min-height: 1000px) {
+                .custom-field-phone{
+                    font-size:25px !important;
+                }
+            }
+
+        </style>
+
+    </head>
+    <body>
+
+
+        <div data-role="page" data-theme="b" id="destpoipage" >
+
+            <div class="my-page">
+
+                <div data-role="header" data-position="fixed" >
+                    <h1>Booking</h1>
+                    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left">Back</a>
+                    <a href="#options-push" class="ui-btn ui-corner-all ui-shadow ui-btn-icon-left ui-icon-gear ui-btn-icon-notext">Options</a>
+                    <div data-role="navbar">
+                        <ul>
+                            <li><a href="#" class="fa fa-certificate" aria-hidden="true"> 2300 </a></li>
+                            <li><a href="#" class="fa fa-check-square" aria-hidden="true"> 10/25 </a></li>
+                            <li><a href="#" class="fa fa-bars" aria-hidden="true"> Menu</a></li>
+                        </ul>
+                    </div>
+                    <h3 class="custom-center-wrapper" style="font-size:18px;">Select Seats</h3>
+                    <div id="line"></div>	
+
+                </div>	
+
+                <div class="ui-content" role="main">
+                    <div>
+                        <input class="custom-field custom-field-phone" type="text" name="txt-first-name" id="txt-first-name" value="From  : Warawickshire" readonly>
+                        <input class="custom-field custom-field-phone" type="text" name="txt-last-name" id="txt-last-name" value="To       : Birmingham" readonly>
+                        <input class="custom-field custom-field-phone" type="text" name="txt-last-name" id="txt-date" value="Date   : 14th January 2017" readonly>
+                        <input class="custom-field custom-field-phone" type="text" name="txt-train" id="txt-date" value="Train   : Liverpool Express" readonly>
+                        
+                        <label class="custom-field custom-field-phone" for="txt-first-name">Select Class</label>
+                        <label class="custom-field custom-field-phone" for="radio-v-1a1" >Standard Class  </label>
+                        <input class="custom-field custom-field-phone" type="radio" name="radio-v-1" id="radio-v-1a1" checked>
+                        <label class="custom-field custom-field-phone" for="radio-v-1a2" >First Class  </label>
+                        <input class="custom-field custom-field-phone" type="radio" name="radio-v-1" id="radio-v-1a2" >
+                        <label class="custom-field custom-field-phone" for="radio-v-1a3" >Business Class  </label>
+                        <input class="custom-field custom-field-phone" type="radio" name="radio-v-1" id="radio-v-1a3" >
+                        <label class="custom-field custom-field-phone" for="txt-first-name">Available Seats</label>
+                        <select data-native-menu="false" id="payment" class="custom-field custom-field-phone" multiple="multiple">
+                            <option>Carriage 1 : A1</option>
+                            <option>Carriage 1 : A5</option>
+                            <option>Carriage 1 : A7</option>
+                            <option>Carriage 1 : A8</option>
+                            <option>Carriage 1 : A9</option>
+                            <option>Carriage 1 : A10</option>
+                            <option>Carriage 1 : B3</option>
+                            <option>Carriage 1 : B6</option>
+                            <option>Carriage 3 : A1</option>
+                            <option>Carriage 3 : A2</option>
+                            <option>Carriage 3 : A4</option>
+                            <option>Carriage 3 : A7</option>
+                        </select>
+                    </div>
+                    <br/>
+                    <a href="paymentOption.html" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left custom-field custom-field-phone"> Next </a>
+
+                </div>
+
+                <div data-role="footer" data-position="fixed">
+                    <div id="line"></div>
+                    <div align="center">
+                        <img src="images/booking/progress2.png" height="10" width="75%" align="center"/>
+                    </div>
+                    <div data-role="navbar">
+                        <ul>
+                            <li><a href="#" class="fa fa-user-circle"></a></li>
+                            <li><a href="#" class="fa fa-map" ></a></li>
+                            <li><a href="#" class="fa fa-certificate"></a></li>
+                            <li><a href="#" class="fa fa-calendar-check-o"></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Options Panel -->
+            <div data-role="panel" id="options-push" data-display="push" data-position="right">
+                <ul data-role="listview">
+                    <li><a href="#" class="fa fa-cog"> App Settings</a></li>
+                    <li><a href="#" class="fa fa-envelope"> Subscriptions</a></li>
+                    <li><a href="#" class="fa fa-info-circle" > About</a></li>
+                </ul>
+                <br><br>
+                <button data-rel="close" class="ui-btn ui-corner-all ui-shadow">
+                    Close <i class="fa fa-times-circle" aria-hidden="true"></i>
+                </button>
+            </div>
+
+        </div>
+
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.mobile-1.4.5.min.js"></script>
+        <script src="js/scripts.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Reservations</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/listview-grid.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+
+<div data-role="page" data-theme="b" id="destpoipage" >
+
+	<div class="my-page">
+
+		<div data-role="header" data-position="fixed" >
+			<h1>Reservations</h1>
+			<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left">Back</a>
+			<a href="#options-push" class="ui-btn ui-corner-all ui-shadow ui-btn-icon-left ui-icon-gear ui-btn-icon-notext">Options</a>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#" class="fa fa-certificate" aria-hidden="true"> 2300 </a></li>
+					<li><a href="#" class="fa fa-check-square" aria-hidden="true"> 10/25 </a></li>
+					<li><a href="#" class="fa fa-bars" aria-hidden="true"> Leaderboard</a></li>
+				</ul>
+			</div>
+			<h3 class="custom-center-wrapper" style="font-size:18px;"> All Reservations</h3>
+			<div id="line"></div>						
+		</div>	
+		
+		<div class="ui-content" role="main">
+			<ul data-role="listview" data-inset="true">
+				<li><a href="#">
+					<img src="images/Stratford_station.jpg" class="ui-li-thumb">
+					<h2>StratFord | Complete</h2>
+					<p>Reserved on: 1st June 2016 9:15 AM</p>
+					<p class="ui-li-aside">
+						<i class="fa fa-check-square-o fa-2x" aria-hidden="true"></i>
+					</p>
+				</a></li>
+				<li><a href="#">
+					<img src="images/Waterloo.jpg" class="ui-li-thumb">
+					<h2>Waterloo | Pending...</h2>
+					<p>Reserved on: 11th July 2016 6:15 PM</p>
+					<p class="ui-li-aside">
+						<i class="fa fa-spinner fa-pulse fa-2x fa-fw" aria-hidden="true"></i>
+					</p>
+				</a></li>
+				<li><a href="#">
+					<img src="images/London_Victoria_Station.jpg" class="ui-li-thumb">
+					<h2>Victoria | Pending...</h2>
+					<p>Reserved on: 3rd January 2016 10:15 AM</p>
+					<p class="ui-li-aside">
+						<i class="fa fa-spinner fa-pulse fa-2x fa-fw" aria-hidden="true"></i>
+					</p>
+				</a></li>
+				<li><a href="#">
+					<img src="images/Birmingham_New_St_Station.jpg" class="ui-li-thumb">
+					<h2>Birmingham | Complete</h2>
+					<p>Reserved on: 3rd January 2016 10:15 AM</p>
+					<p class="ui-li-aside">
+						<i class="fa fa-check-square-o fa-2x" aria-hidden="true"></i>
+					</p>
+				</a></li>
+				<li><a href="#">
+					<img src="images/Leeds_city_railway_stration.jpg" class="ui-li-thumb">
+					<h2>Leeds | Complete</h2>
+					<p>Reserved on: 3rd January 2016 10:15 AM</p>
+					<p class="ui-li-aside">
+						<i class="fa fa-check-square-o fa-2x" aria-hidden="true"></i>
+					</p>
+				</a></li>
+				<li><a href="#">
+					<img src="images/Manchester_Picadilly_Station_Panorama.jpg" class="ui-li-thumb">
+					<h2>Manchester | Complete</h2>
+					<p>Reserved on: 3rd January 2016 10:15 AM</p>
+					<p class="ui-li-aside">
+						<i class="fa fa-check-square-o fa-2x" aria-hidden="true"></i>
+					</p>
+				</a></li>
+				<li><a href="#">
+					<img src="images/Edinburgh_Waverley_from_the_east.jpg" class="ui-li-thumb">
+					<h2>Edinburgh | Complete</h2>
+					<p>Reserved on: 3rd January 2016 10:15 AM</p>
+					<p class="ui-li-aside">
+						<i class="fa fa-check-square-o fa-2x" aria-hidden="true"></i>
+					</p>
+				</a></li>
+				<li><a href="#">
+					<img src="images/Reading_railway_station_MMB.jpg" class="ui-li-thumb">
+					<h2>Reading | Pending... </h2>
+					<p>Reserved on: 3rd January 2016 10:15 AM</p>
+					<p class="ui-li-aside">
+						<i class="fa fa-spinner fa-pulse fa-2x fa-fw" aria-hidden="true"></i>
+					</p>
+				</a></li>
+				<li><a href="#">
+					<img src="images/Lime_Street_Station_Liverpool.jpg" class="ui-li-thumb">
+					<h2>Liverpool | Pending...</h2>
+					<p>Reserved on: 3rd January 2016 10:15 AM</p>
+					<p class="ui-li-aside">
+						<i class="fa fa-spinner fa-pulse fa-2x fa-fw" aria-hidden="true"></i>
+					</p>
+				</a></li>				
+			</ul>
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<div id="line"></div>
+			<div class="custom-center-wrapper" style="font-size:45px;" >
+				<a href="booking.html" class="ui-btn ui-corner-all fa fa-pencil-square-o"> New Reservation </a>
+			</div>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="reservationsCompleted.html" data-transition="slide" data-direction="reverse" class="fa fa-thumbs-o-up"> Completed</a> </li>
+					<li><a href="#" class="fa fa-train" > All</a></li>
+					<li><a href="reservationsPending.html" data-transition="slide" class="fa fa-refresh"> Pending</a></li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+	
+	<!-- Options Panel -->
+	<div data-role="panel" id="options-push" data-display="push" data-position="right">
+		<ul data-role="listview">
+			<li><a href="#" class="fa fa-cog"> App Settings</a></li>
+			<li><a href="#" class="fa fa-envelope"> Subscriptions</a></li>
+			<li><a href="#" class="fa fa-info-circle" > About</a></li>
+		</ul>
+		<br><br>
+		<button data-rel="close" class="ui-btn ui-corner-all ui-shadow">
+			Close <i class="fa fa-times-circle" aria-hidden="true"></i>
+		</button>
+	</div>
+
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/scripts.js"></script>
+
+	
+</body>
+</html>
