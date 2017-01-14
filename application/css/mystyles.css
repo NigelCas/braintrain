@@ -1,0 +1,279 @@
+.my-ui-title {
+	color: #e34f14;
+	text-shadow: none;
+}
+
+.my-title-header {
+	background-color: #353740 !important;
+}
+
+.my-ui-block-black {
+	background-color: #8c8d91 !important;
+}
+
+.my-ui-block-white {
+	background-color: #ced1da !important;
+	height: 100%;
+}
+
+.my-main-content-header {
+	color: #e34f14;
+    font-size: -webkit-xxx-large;
+    text-align: right;
+    text-shadow: none;
+}
+
+.my-main-content-text {
+	color: #f58220;
+    font-size: x-large;
+    text-align: right;
+    text-shadow: none;
+}
+
+.my-text-heading {
+	color: #e34f14;
+	font-weight: bold;
+    font-size: xx-large;
+    text-shadow: none;
+}
+
+.my-text-content {
+	color: #353740;
+    font-size: xx-large;
+    text-shadow: none;
+}
+
+.my-card-header-text {
+	color: #f58220;
+	font-size: xx-large;
+	text-align: left;
+	text-shadow: none;
+	margin-top: 18px;
+	margin-left: 10px;
+}
+
+.my-card-content-text {
+	color: #f58220;
+	font-size: x-large;
+	text-align: left;
+	text-shadow: none;
+	margin-left: 10px;
+}
+
+/* with gradient effect */
+.my-image-box-grad {
+	width: 300px; 
+	height: 217px;
+	background-color: #f9f9f9;
+	-webkit-mask-image:-webkit-gradient(linear, left top, right top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+	background-repeat: no-repeat;
+    background-size: cover;
+	margin-left: -16px;
+    margin-top: -6px;
+    margin-bottom: -8px;
+}
+
+/* borders / no gradient */
+.my-image-box {
+	width: 125px;
+	height: 125px;
+	margin-top: 5px;
+	margin-left: -3px !important;
+	border-radius: 0.3125em; 
+	background-color: #f9f9f9;
+	border-width: 4px;
+	border-style: solid;
+	border-color: #f58220;
+	-webkit-mask-image:-webkit-gradient(linear, left top, right top, from(rgba(0,0,0,1)), to(rgba(0,0,0,1)));
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-left: -7px;
+}
+
+/* borders / no gradient */
+.my-image-box-large {
+	width: 150px;
+	height: 150px;
+	margin-top: 5px;
+	margin-left: -3px !important;
+	border-radius: 0.3125em; 
+	background-color: #f9f9f9;
+	border-width: 4px;
+	border-style: solid;
+	border-color: #f58220;
+	-webkit-mask-image:-webkit-gradient(linear, left top, right top, from(rgba(0,0,0,1)), to(rgba(0,0,0,1)));
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-left: -7px;
+}
+
+.my-ui-input-btn {
+	border-style: solid;
+    border-width: 3px;
+    border-color: #f58220 !important;
+	color: #e34f14 !important;
+	background-color: #333 !important;
+	text-shadow: none !important;
+}
+
+.my-ui-icon-btn {
+	height: 50px;
+	width: 50px;
+	border-style: solid;
+	border-width: 3px;
+	border-color: #f58220 !important;
+	color: #e34f14 !important;
+	background-color: #333 !important;
+	text-shadow: none !important;
+	margin-top: 60px;
+}
+
+.my-ui-icon-div {
+	margin-left: 190px;
+    margin-top: -8px;
+    margin-bottom: -14px;
+}
+
+@media only screen and (max-width: 668px) and (orientation: landscape) {
+	.my-ui-icon-div-iphone-land {
+		margin-left: 90px;
+		margin-top: 2px;
+		margin-bottom: -14px;
+	}
+}
+
+@media only screen and (max-width: 1025px) and (orientation: landscape) {
+	.my-ui-icon-div-land {
+		margin-left: 445px;
+		margin-top: 2px;
+		margin-bottom: -14px;
+	}
+}
+
+@media only screen and (max-width: 415px) and (orientation: portrait) {
+	
+	.my-image-box-iphone {
+		width: 125px;
+		height: 125px;
+		margin-top: 5px;
+		margin-left: -3px !important;
+		border-radius: 0.3125em; 
+		background-color: #f9f9f9;
+		border-width: 4px;
+		border-style: solid;
+		border-color: #f58220;
+		-webkit-mask-image:-webkit-gradient(linear, left top, right top, from(rgba(0,0,0,1)), to(rgba(0,0,0,1)));
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin-left: -7px;
+	}
+	
+	.my-image-box-iphone-small {
+		width: 90px;
+		height: 90px;
+		margin-top: 5px;
+		margin-left: -3px !important;
+		border-radius: 0.3125em; 
+		background-color: #f9f9f9;
+		border-width: 4px;
+		border-style: solid;
+		border-color: #f58220;
+		-webkit-mask-image:-webkit-gradient(linear, left top, right top, from(rgba(0,0,0,1)), to(rgba(0,0,0,1)));
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin-left: -7px;
+	}
+	
+	.my-main-content-header-iphone {
+		color: #e34f14;
+		font-size: x-large;
+		text-align: center;
+		text-shadow: none;
+	}
+	
+	.my-main-content-text-iphone {
+		color: #f58220;
+		font-size: medium;
+		text-align: center;
+		text-shadow: none;
+	}
+	
+	.my-card-header-text-iphone {
+		color: #f58220;
+		font-size: larger;
+		text-align: left;
+		text-shadow: none;
+		margin-top: 10px;
+	}
+	
+	.my-card-content-text-iphone {
+		color: #f58220;
+		font-size: medium;
+		text-align: left;
+		text-shadow: none;
+	}
+	
+	.my-text-heading-iphone {
+		color: #e34f14;
+		font-weight: bold;
+		font-size: larger;
+		text-shadow: none;
+	}
+	
+	.my-text-content-iphone {
+		color: #353740;
+		font-size: medium;
+		text-shadow: none;
+	}
+	
+	.my-ui-input-btn-iphone {
+		border-style: solid;
+		border-width: 3px;
+		border-color: #f58220 !important;
+		color: #e34f14 !important;
+		background-color: #333 !important;
+		text-shadow: none !important;
+		float: none !important;
+	}
+	
+	.my-ui-icon-btn-iphone {
+		width: 27px;
+		height: 27px;
+		border-style: solid;
+		border-width: 3px;
+		border-color: #f58220 !important;
+		color: #e34f14 !important;
+		background-color: #333 !important;
+		text-shadow: none !important;
+		margin-top: 60px;
+	}
+	
+	.my-ui-icon-div-iphone {
+		margin-left: 8px;
+		margin-top: 2px;
+		margin-bottom: -14px;
+	}
+	
+	.my-ui-fa {
+		margin-top: 5px !important;
+		/* margin-left: 24px !important; */
+	}
+	
+}
+
+@media only screen and (max-width: 768px) {
+	
+	.my-image-box-ipad {
+		width: 100px; 
+		height: 100px; 
+		border-radius: 0.3125em; 
+		background-color: #f9f9f9;
+		border-width: 4px;
+		border-style: solid;
+		border-color: #f58220;
+		background-image : url(../image/photo.jpg);
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+}
+

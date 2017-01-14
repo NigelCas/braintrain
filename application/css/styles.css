@@ -1,0 +1,33 @@
+
+/* Center align components , default left aligned*/
+/* define all classes with 'custom' prefix */
+
+.custom-center-wrapper{
+  text-align: center;
+}
+
+.custom-center-wrapper * {
+  margin: 0 auto;
+}
+
+#line {
+    width:inherit;
+    height:0;
+    border:1px solid #ffffff;
+}
+
+
+a.favlink.active { color:red; }
+
+a.favlinked { color:red; }
+a.favlinked.active { color:red; }
+
+/* Center-aligned text */
+.mc-text-center {
+    text-align:center;
+}
+
+/* Top margin for some elements */
+.mc-top-margin-1-5 {
+    margin-top:1.5em;
+}
