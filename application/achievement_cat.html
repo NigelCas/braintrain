@@ -18,7 +18,7 @@
 	<!-- header -->
 	<div class="my-title-header" data-role="header" data-position="fixed">
 		<h1 class="my-ui-title" >Achievements</h1>
-                    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left">Back</a>
+                    <a href="#" data-rel="back" data-ajax="false" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left">Back</a>
                     <a href="#options-push" class="ui-btn ui-corner-all ui-shadow ui-btn-icon-left ui-icon-gear ui-btn-icon-notext">Options</a>
 		<div data-role="navbar">
 			<ul>
@@ -35,7 +35,7 @@
 	
 		<!-- Content Card -->
 		
-		<a href="achievement_list.html" style="text-decoration: none;">
+		<a href="achievement_list.html" data-ajax="false" style="text-decoration: none;">
 			<div class="ui-body ui-body-a ui-corner-all my-ui-block-white">
 			
 				<div style="display: -webkit-box;">
@@ -155,10 +155,10 @@
 		<div data-role="footer" data-position="fixed">
 			<div data-role="navbar">
 				<ul>
-					<li><a href="user_profile.html" data-transition="slide" data-direction="reverse" class="fa fa-user-circle"> Profile</a></li>
+					<li><a href="user_profile.html" data-transition="slide" data-direction="reverse" data-ajax="false" class="fa fa-user-circle"> Profile</a></li>
 					<li><a href="Home.html" data-transition="slide" data-direction="reverse" data-ajax="false" class="fa fa-map" > Map</a></li>
 					<li><a href="#" class="fa fa-trophy"> Rewards</a></li>
-					<li><a href="reservationsAll.html" data-transition="slide" class="fa fa-calendar-check-o"> Journeys</a></li>
+					<li><a href="reservationsAll.html" data-ajax="false" data-transition="slide" class="fa fa-calendar-check-o"> Journeys</a></li>
 				</ul>
 			</div>
 			<h4 style="display:none;">Footer</h4>
@@ -166,11 +166,11 @@
 		<!-- /footer -->
 		
 		                <!-- Options Panel -->
-                <div data-role="panel" id="options-push" data-display="push" data-position="right">
+                <div data-role="panel" id="options-push" data-display="overlay" data-position="right">
                     <ul data-role="listview">
-                        <li><a href="#" class="fa fa-cog"> App Settings</a></li>
-                        <li><a href="#" class="fa fa-envelope"> Subscriptions</a></li>
-                        <li><a href="#" class="fa fa-info-circle" > About</a></li>
+                   <li><a href="settings.html" class="fa fa-cog"> App Settings</a></li>
+                    <li><a href="signin.html" class="fa fa-user-circle"> New User</a></li>
+                    <li><a href="#" class="fa fa-info-circle" > About</a></li>
                     </ul>
                     <br><br>
                     <button data-rel="close" class="ui-btn ui-corner-all ui-shadow">

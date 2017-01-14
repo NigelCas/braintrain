@@ -146,7 +146,7 @@
                 <!--header navigation area starts-->
                 <div data-role="header" data-position="fixed" >
                     <h1>STATION</h1>
-                    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left">Back</a>
+                    <a href="#" data-rel="back" data-ajax="false" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left">Back</a>
                     <a href="#options-push" class="ui-btn ui-corner-all ui-shadow ui-btn-icon-left ui-icon-gear ui-btn-icon-notext">Options</a>
                     <div data-role="navbar">
                         <ul>
@@ -181,9 +181,9 @@
                                 </p>
                             </li>
                             <li style="width: 100%" id="btn-area">
-                                <input type="submit" data-block="true" value="Reserve Tickets" class="input-feild btnsubmit" style="background: #ffffff" onclick="location.href='booking.html';">
-                                <input type="submit" data-block="true" value="Challenges" class="input-feild btnsubmit" style="background: #ffffff" onclick="location.href='questionaire_one.html';">
-                                <input type="submit" data-block="true" value="Places of interrest" class="input-feild btnsubmit" style="background: #ffffff" onclick="location.href='destinationPOI_london.html';">
+                                <input type="submit" value="Reserve Tickets" class="input-feild btnsubmit" style="background: #ffffff" onclick="location.href='booking.html';">
+                                <input type="submit" data-ajax="false" value="Challenges" class="input-feild btnsubmit" style="background: #ffffff" onclick="location.href='questionaire_one.html';">
+                                <input type="submit" value="Places of interrest" class="input-feild btnsubmit" style="background: #ffffff" onclick="location.href='destinationPOI_london.html';">
                             </li>
                         </ul>
 
@@ -197,10 +197,10 @@
                 <div data-role="footer" data-position="fixed" id="footer">
                     <div data-role="navbar">
                         <ul>
-                            <li><a href="user_profile.html" data-transition="slide" data-direction="reverse" class="fa fa-user-circle"></a></li>
-                            <li><a href="Home.html" data-transition="slide" data-direction="reverse" class="fa fa-map" ></a></li>
-                            <li><a href="achievement_cat.html" data-transition="slide" data-direction="reverse" class="fa fa-trophy"></a></li>
-                            <li><a href="reservationsAll.html" data-transition="slide" data-direction="reverse" class="fa fa-calendar-check-o"></a></li>
+                            <li><a href="user_profile.html" data-transition="slide" data-direction="reverse" data-ajax="false" class="fa fa-user-circle"></a></li>
+                            <li><a href="Home.html" data-transition="slide" data-direction="reverse" data-ajax="false" class="fa fa-map" ></a></li>
+                            <li><a href="achievement_cat.html" data-transition="slide" data-direction="reverse" data-ajax="false" class="fa fa-trophy"></a></li>
+                            <li><a href="reservationsAll.html" data-transition="slide" data-direction="reverse" data-ajax="false" class="fa fa-calendar-check-o"></a></li>
                         </ul>
                     </div>
                 </div>
@@ -208,10 +208,10 @@
             </div>
 
             <!-- Options Panel -->
-            <div data-role="panel" id="options-push" data-display="push" data-position="right">
+            <div data-role="panel" id="options-push" data-display="overlay" data-position="right">
                 <ul data-role="listview">
-                    <li><a href="#" class="fa fa-cog"> App Settings</a></li>
-                    <li><a href="#" class="fa fa-envelope"> Subscriptions</a></li>
+                    <li><a href="settings.html" class="fa fa-cog"> App Settings</a></li>
+                    <li><a href="signin.html" class="fa fa-user-circle"> New User</a></li>
                     <li><a href="#" class="fa fa-info-circle" > About</a></li>
                 </ul>
                 <br><br>

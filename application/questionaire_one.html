@@ -17,7 +17,7 @@
 
 		<div data-role="header" data-position="fixed" >
 			<h1>LONDON </h1>
-			<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left">Back</a>
+			<a href="#" data-rel="back" data-ajax="false" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left">Back</a>
 			<a href="#options-push" class="ui-btn ui-corner-all ui-shadow ui-btn-icon-left ui-icon-gear ui-btn-icon-notext">Options</a>
 			<div data-role="navbar">
 				<ul>
@@ -61,11 +61,11 @@
 
 	
 	<!-- Options Panel -->
-	<div data-role="panel" id="options-push" data-display="push" data-position="right">
+	<div data-role="panel" id="options-push" data-display="overlay" data-position="right">
 		<ul data-role="listview">
-			<li><a href="settings.html" class="fa fa-cog"> App Settings</a></li>
-			<li><a href="#" class="fa fa-envelope"> Subscriptions</a></li>
-			<li><a href="#" class="fa fa-info-circle" > About</a></li>
+                    <li><a href="settings.html" class="fa fa-cog"> App Settings</a></li>
+                    <li><a href="signin.html" class="fa fa-user-circle"> New User</a></li>
+                    <li><a href="#" class="fa fa-info-circle" > About</a></li>
 		</ul>
 		<br><br>
 		<button data-rel="close" class="ui-btn ui-corner-all ui-shadow">

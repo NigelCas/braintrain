@@ -18,7 +18,7 @@
 	<!-- header -->
 	<div class="my-title-header" data-role="header" data-position="fixed">
 		<h1 class="my-ui-title" >My Profile</h1>
-			<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left">Back</a>
+			<a href="#" data-rel="back" data-ajax="false" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left">Back</a>
 			<a href="#options-push" class="ui-btn ui-corner-all ui-shadow ui-btn-icon-left ui-icon-gear ui-btn-icon-notext">Options</a>
 		<div data-role="navbar">
 			<ul>
@@ -360,7 +360,7 @@
 			
 			<div>
 				<div style="width: 100px; margin: 0 auto; float: left;">
-					<a href="user_profile.html" style="height: 5px; width: 46px;" class="ui-btn my-ui-input-btn my-ui-input-btn-iphone ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-right ui-nodisc-icon">
+					<a href="user_profile.html" data-ajax="false" style="height: 5px; width: 46px;" class="ui-btn my-ui-input-btn my-ui-input-btn-iphone ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-right ui-nodisc-icon">
 						<div style="margin-top: -7px;">
 							Cancel
 						</div>
@@ -368,7 +368,7 @@
 				</div>
 				
 				<div style="width: 100px; margin: 0 auto; float: right;">
-					<a href="user_profile.html" style="height: 5px; width: 46px;" class="ui-btn my-ui-input-btn my-ui-input-btn-iphone ui-shadow ui-corner-all ui-icon-check ui-btn-icon-right ui-nodisc-icon">
+					<a href="user_profile.html" data-ajax="false" style="height: 5px; width: 46px;" class="ui-btn my-ui-input-btn my-ui-input-btn-iphone ui-shadow ui-corner-all ui-icon-check ui-btn-icon-right ui-nodisc-icon">
 						<div style="margin-top: -7px;">
 							Save
 						</div>
@@ -384,9 +384,9 @@
 		<div data-role="footer" data-position="fixed">
 			<div data-role="navbar">
 				<ul>
-					<li><a href="#" data-ajax="false" class="fa fa-address-card"></a></li>
-					<li><a href="#" class="fa fa-credit-card" ></a></li>
-					<li><a href="#" class="fa fa-heart"></a></li>
+					<li><a href="#" class="fa fa-address-card"></a></li>
+					<li><a href="payment_mode.html" data-transition="slide" data-ajax="false" class="fa fa-credit-card" ></a></li>
+					<li><a href="favourites.html" data-transition="slide" data-ajax="false" class="fa fa-heart"></a></li>
 				</ul>
 			</div>
 			<h4 style="display:none;">Footer</h4>
@@ -394,7 +394,7 @@
 		<!-- /footer -->
 		
 	<!-- Options Panel -->
-	<div data-role="panel" id="options-push" data-display="push" data-position="right">
+	<div data-role="panel" id="options-push" data-display="overlay" data-position="right">
 		<ul data-role="listview">
 			<li><a href="settings.html" class="fa fa-cog"> App Settings</a></li>
 			<li><a href="#" class="fa fa-envelope"> Subscriptions</a></li>

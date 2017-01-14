@@ -44,7 +44,7 @@
 
                 <div data-role="header" data-position="fixed" >
                     <h1>Booking</h1>
-                    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left">Back</a>
+                    <a href="#" data-rel="back" data-ajax="false" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left">Back</a>
                     <a href="#options-push" class="ui-btn ui-corner-all ui-shadow ui-btn-icon-left ui-icon-gear ui-btn-icon-notext">Options</a>
                     <div data-role="navbar">
                         <ul>
@@ -79,8 +79,8 @@
                         <div id="line"></div>
                         <br/>
                         <div>
-                            <a class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left summary-field summary-field-phone" href="Home.html" > Back to Map </a>
-                            <a class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left summary-field summary-field-phone" href="booking.html" > New Booking </a>
+                            <a class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left summary-field summary-field-phone" href="Home.html" data-ajax="false" > Back to Map </a>
+                            <a class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left summary-field summary-field-phone" href="booking.html"  data-ajax="false"> New Booking </a>
 
                         </div>
 
@@ -91,13 +91,14 @@
                         <div id="line"></div>
                         <div align="center">
                             <img src="images/booking/Picture3.png" height="10" width="75%" align="center"/>
+							<h3> Step : 3 of 3 </h3>
                         </div>
                         <div data-role="navbar">
                             <ul>
-                                <li><a href="#" class="fa fa-user-circle"></a></li>
-                                <li><a href="#" class="fa fa-map" ></a></li>
-                                <li><a href="#" class="fa fa-certificate"></a></li>
-                                <li><a href="#" class="fa fa-calendar-check-o"></a></li>
+                            <li><a href="user_profile.html" class="fa fa-user-circle" data-transition="slide" data-direction="reverse" data-ajax="false"> Profile</a></li>
+                            <li><a href="Home.html" data-ajax="false" class="fa fa-map" > Map</a></li>
+                            <li><a href="achievement_cat.html" class="fa fa-trophy" data-transition="slide" data-ajax="false"> Rewards </a></li>
+                            <li><a href="reservationsAll.html" class="fa fa-calendar-check-o" data-transition="slide"> Journeys</a></li>
                             </ul>
                         </div>
                     </div>
@@ -105,12 +106,12 @@
                 </div>
 
                 <!-- Options Panel -->
-                <div data-role="panel" id="options-push" data-display="push" data-position="right">
+                <div data-role="panel" id="options-push" data-display="overlay" data-position="right">
                     <ul data-role="listview">
-                        <li><a href="#" class="fa fa-cog"> App Settings</a></li>
-                        <li><a href="#" class="fa fa-envelope"> Subscriptions</a></li>
-                        <li><a href="#" class="fa fa-info-circle" > About</a></li>
-                    </ul>
+                    <li><a href="settings.html" class="fa fa-cog"> App Settings</a></li>
+                    <li><a href="signin.html" class="fa fa-user-circle"> New User</a></li>
+                    <li><a href="#" class="fa fa-info-circle" > About</a></li>
+                   </ul>
                     <br><br>
                     <a data-rel="close" class="ui-btn ui-corner-all ui-shadow">
                         Close <i class="fa fa-times-circle" aria-hidden="true"></i>
