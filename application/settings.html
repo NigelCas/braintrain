@@ -152,15 +152,20 @@
 
                     <!--form area-->
                     <div class="ui-grid-solo form-area">
+						<form id="contactForm">
                         <!--  <div class="ui-field-contain ">-->
                         <!--<fieldset>-->
                         <div data-role="fieldcontain" class="container">
                             <div class="form-field">
                                 <label for="slider-flip-m"  >Subscribe to our newsletter :</label>
-                                <select name="slider-flip-m" id="slider-flip-m" data-role="slider" data-mini="true" class="input-feild">
+                                <select name="slider-flip-m" id="slider-flip-m" name="subsselect" data-role="slider" data-mini="true" class="input-feild">
                                     <option value="off">No</option>
-                                    <option value="on" selected="">Yes</option>
+                                    <option value="on">Yes</option>
                                 </select>
+								<div id="emailsb">
+									 <p>Enter Your Email Below (Subscribes to Favourites POIs): </p>
+									<input type="text" name="fav-email" id="fav-email" />
+								</div>
                             </div>
 
 
@@ -168,7 +173,7 @@
                                 <label for="slider-flip-m" >Allow notifications :</label>
                                 <select name="slider-flip-m" id="slider-flip-m" data-role="slider" data-mini="true" class="input-feild">
                                     <option value="off">No</option>
-                                    <option value="on" selected="">Yes</option>
+                                    <option value="on">Yes</option>
                                 </select>
                             </div>
 
@@ -180,7 +185,9 @@
                         <!--</fieldset>-->
                         <!--</div>-->
                         <div class="btn-area">
-                            <input type="submit" data-inline="true" value="Submit" class="input-feild btnsubmit"></div>
+                            <input type="submit" data-inline="true" value="Submit" class="input-feild btnsubmit">
+						</div>
+						</form>
                     </div>
                     <!--form area ends-->
 
@@ -204,13 +211,13 @@
             <!-- Options Panel -->
             <div data-role="panel" id="options-push" data-display="push" data-position="right">
                 <ul data-role="listview">
-                    <li><a href="#" class="fa fa-cog"> App Settings</a></li>
-                    <li><a href="#" class="fa fa-envelope"> Subscriptions</a></li>
+                    <li><a href="settings.html" data-ajax="false" class="fa fa-cog"> App Settings</a></li>
+                    <li><a href="signin.html" class="fa fa-user-circle"> New User</a></li>
                     <li><a href="#" class="fa fa-info-circle" > About</a></li>
                 </ul>
                 <br><br>
-                <button data-rel="close" class="ui-btn ui-corner-all ui-shadow">
-                    Close <i class="fa fa-times-circle" aria-hidden="true"></i>
+				<label for="btn-logged-user">Signed In As :</label>
+                <button class="ui-btn ui-corner-all ui-shadow" id="btn-logged-user">
                 </button>
             </div>
 
@@ -219,8 +226,8 @@
 
         <script src="js/jquery.min.js"></script>
         <script src="js/jquery.mobile-1.4.5.min.js"></script>
+		<script src="js/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="js/email.min.js"></script>
         <script src="js/scripts.js"></script>
-
-
     </body>
 </html>

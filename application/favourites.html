@@ -33,47 +33,8 @@
 		</div>	
 
 		<div class="ui-content" role="main">
-			<ul data-role="listview" data-inset="true">
-				<li><a href="destinationPOI_london_gallery.html" data-transition="slide">
-					<img src="images/londoneye.jpg" class="ui-li-thumb">
-					<h2>London Eye</h2>
-					<p>Added on : 21st April 2016</p>
-					<p class="ui-li-aside">
-						<a href="#" class="favlinked">
-							<i class="fa fa-heart fa-3x" aria-hidden="true"></i>
-						</a>
-					</p>
-				</a></li>
-				<li><a href="#">
-					<img src="images/1980.jpg" class="ui-li-thumb">
-					<h2>Madame Tussauds</h2>
-					<p>Added on : 21st October 2016</p>
-					<p class="ui-li-aside">
-						<a href="#" class="favlinked">
-							<i class="fa fa-heart fa-3x" aria-hidden="true"></i>
-						</a>
-					</p>
-				</a></li>
-				<li><a href="#">
-					<img src="images/buckingham.jpg" class="ui-li-thumb">
-					<h2>Buckingham Place</h2>
-					<p>Added on : 1st November 2016</p>
-					<p class="ui-li-aside">
-						<a href="#" class="favlinked">
-							<i class="fa fa-heart fa-3x" aria-hidden="true"></i>
-						</a>
-					</p>
-				</a></li>
-				<li><a href="#">
-					<img src="images/Kings_Cross.jpg" class="ui-li-thumb">
-					<h2>King's Cross </h2>
-					<p>Added on : 11th July 2016</p>
-					<p class="ui-li-aside">
-						<a href="#" class="favlinked">
-							<i class="fa fa-heart fa-3x" aria-hidden="true"></i>
-						</a>
-					</p>
-				</a></li>				
+			<ul id="favul" data-role="listview" data-inset="true">
+				
 			</ul>
 		</div>
 
@@ -92,15 +53,15 @@
 	
 	<!-- Options Panel -->
 	<div data-role="panel" id="options-push" data-display="overlay" data-position="right">
-		<ul data-role="listview">
-                    <li><a href="settings.html" class="fa fa-cog"> App Settings</a></li>
+                <ul data-role="listview">
+                    <li><a href="settings.html" data-ajax="false" class="fa fa-cog"> App Settings</a></li>
                     <li><a href="signin.html" class="fa fa-user-circle"> New User</a></li>
                     <li><a href="#" class="fa fa-info-circle" > About</a></li>
-		</ul>
-		<br><br>
-		<button data-rel="close" class="ui-btn ui-corner-all ui-shadow">
-			Close <i class="fa fa-times-circle" aria-hidden="true"></i>
-		</button>
+                </ul>
+                <br><br>
+				<label for="btn-logged-user">Signed In As :</label>
+                <button class="ui-btn ui-corner-all ui-shadow" id="btn-logged-user">
+                </button>
 	</div>
 
 </div>
@@ -108,6 +69,8 @@
 
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/email.min.js"></script>
 <script src="js/scripts.js"></script>
 
 	

@@ -230,15 +230,15 @@
 		
                 <!-- Options Panel -->
                 <div data-role="panel" id="options-push" data-display="overlay" data-position="right">
-                    <ul data-role="listview">
-                   <li><a href="settings.html" class="fa fa-cog"> App Settings</a></li>
+                <ul data-role="listview">
+                    <li><a href="settings.html" data-ajax="false" class="fa fa-cog"> App Settings</a></li>
                     <li><a href="signin.html" class="fa fa-user-circle"> New User</a></li>
                     <li><a href="#" class="fa fa-info-circle" > About</a></li>
-                    </ul>
-                    <br><br>
-                    <button data-rel="close" class="ui-btn ui-corner-all ui-shadow">
-                        Close <i class="fa fa-times-circle" aria-hidden="true"></i>
-                    </button>
+                </ul>
+                <br><br>
+				<label for="btn-logged-user">Signed In As :</label>
+                <button class="ui-btn ui-corner-all ui-shadow" id="btn-logged-user">
+                </button>
                 </div>		
 
 	</div>
@@ -246,6 +246,8 @@
 
 <script src="js/jquery.js"></script>
 <script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/email.min.js"></script>	
 <script src="js/jquery.js"></script>
 
 </body>

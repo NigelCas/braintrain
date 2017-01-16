@@ -172,7 +172,7 @@
 
   $(document).ready(function() {
     var imgs, puzzle;
-    imgs = ['http://placekitten.com/g/300/300', 'http://placekitten.com/g/301/301', 'http://placekitten.com/g/299/299'];
+    imgs = ['images/london-eye2.jpg','images/img-thing.jpg'];
     return puzzle = new Puzzle(imgs);
   });
 

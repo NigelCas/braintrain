@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BrainTrain Challenge</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/listview-grid.css">
+	<link rel="stylesheet" href="css/picture_slide_puzzle.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+
+<div data-role="page" data-theme="b" id="destpicchallpage" >
+
+		<div data-role="header" data-position="fixed" >
+			<h1> London </h1>
+			<a href="#" data-rel="back" data-ajax="false" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left">Back</a>
+			<a href="#options-push" class="ui-btn ui-corner-all ui-shadow ui-btn-icon-left ui-icon-gear ui-btn-icon-notext">Options</a>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#" class="fa fa-certificate" aria-hidden="true"> 2300 </a></li>
+					<li><a href="#" class="fa fa-check-square" aria-hidden="true"> 10/25 </a></li>
+					<li><a href="#" class="fa fa-bars" aria-hidden="true"> Leaderboard</a></li>
+				</ul>
+			</div>			
+			<h3 class="custom-center-wrapper" style="font-size:20px; margin: 0 0%;">Pic'n'Slide Challenge</h3>
+			<div id="line"></div>						
+		</div>
+		
+		<div class="ui-content" role="main">
+			<div class="custom-center-wrapper">
+					<div id="canvas"></div>
+					<div id="previews"></div>			
+			</div>
+			<h4> Above are famous POI pictures in the City you are In, select one and piece it together under 5 minutes to proceed.. </h4>
+			<a href="questionaire_two.html" data-transition="slide" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-user"> SUBMIT </a>
+        </div>			
+
+		<div data-role="popup" id="dlg-invalid-answer" data-dismissible="false" style="max-width:400px;">
+                <div role="main" class="ui-content">
+                    <h3 class="mc-text-danger">Answer Incorrect</h3>
+                    <p>Did you enter the right answer?</p>
+                    <div class="mc-text-center"><a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-b mc-top-margin-1-5">OK</a></div>
+                </div>
+		</div>
+		
+		
+		<div data-role="footer" data-position="fixed">
+			<div id="line"></div>
+			<div class="custom-center-wrapper" style="font-size:20px; color:gold;">
+				<i class="fa fa-trophy"> Gold Reward (10 points) </i>
+			</div>
+			<div id="line"></div>
+			<h4 class="custom-center-wrapper" style="font-size:15px;"> Challenge : 1 of 3 </h4>
+		</div>
+
+	
+	<!-- Options Panel -->
+	<div data-role="panel" id="options-push" data-display="overlay" data-position="right">
+                <ul data-role="listview">
+                    <li><a href="settings.html" data-ajax="false" class="fa fa-cog"> App Settings</a></li>
+                    <li><a href="signin.html" class="fa fa-user-circle"> New User</a></li>
+                    <li><a href="#" class="fa fa-info-circle" > About</a></li>
+                </ul>
+                <br><br>
+				<label for="btn-logged-user">Signed In As :</label>
+                <button class="ui-btn ui-corner-all ui-shadow" id="btn-logged-user">
+                </button>
+	</div>
+
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/email.min.js"></script> 
+<script src="js/picture_slide_puzzle.js"></script>
+<script src="js/scripts.js"></script>
+
+	
+</body>
+</html>			

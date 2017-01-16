@@ -63,18 +63,34 @@
                         <select data-native-menu="false" id="payment" class="summary-field summary-field-phone">
                             <option>Master Card</option>
                             <option>Visa Debit Card</option>
-
+							<option value="paypal">PayPal</option>
                         </select>
                     </div>
 
                     <div id="line"></div>
                     <div>
+						<div id="paywithcard">
                         <input type="text" class="summary-field summary-field-phone" name="txt-first-name" id="txt-first-name" value="Card Type            : Debit Card" readonly>
                         <input type="text" class="summary-field summary-field-phone" name="txt-last-name" id="txt-last-name" value="Card No               : 94963588790" readonly>
                         <input type="text" class="summary-field summary-field-phone" name="txt-last-name" id="txt-date" value="CVV                     : 407" readonly>
                         <input type="text" class="summary-field summary-field-phone" name="txt-train" id="txt-date" value="Expiration Date    : 25/10/2020" readonly>
                         <input type="text" class="summary-field summary-field-phone" name="txt-train" id="txt-date" value="Total Tickets         : 1" readonly>
-                        <input type="text" class="summary-field summary-field-phone" name="txt-train" id="txt-date" value="Total Amount        : 35 USD" readonly>
+                        <input type="text" class="summary-field summary-field-phone" name="txt-train" id="txt-date" value="Total Amount        : 25 USD" readonly>
+						</div>
+						
+						<div id="paywithpaypal" align="center">
+						 <div class="ui-field-contain" >
+						<label class="summary-field summary-field-phone" >Pay Through PayPal : </label>
+								<form name="_xclick" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+								<input type="hidden" name="cmd" value="_xclick">
+								<input type="hidden" name="business" value="buddhima911@gmail.com">
+								<input type="hidden" name="currency_code" value="USD">
+								<input type="hidden" name="item_name" value="Liverpool Express Ticket">
+								<input type="hidden" name="amount" value="25.00">
+								<input type="image" src="http://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!">
+								</form>						
+						</div>
+						</div>
 
                         <div id="line"></div>
                         <br/>
@@ -85,7 +101,7 @@
                         <br/>
                         <div>
                             <label class="summary-field summary-field-phone" align="center">Please Confirm the Transaction </label>
-                            <a class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left summary-field summary-field-phone" href="bookingSummary.html"  data-ajax="false"> Proceed with Payment </a>
+                            <a id="bookingconfirm" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left summary-field summary-field-phone" href="bookingSummary.html"  data-ajax="false"> Proceed with Payment </a>
 
                         </div>
 
@@ -118,9 +134,9 @@
                     <li><a href="#" class="fa fa-info-circle" > About</a></li>
                     </ul>
                     <br><br>
-                    <button data-rel="close" class="ui-btn ui-corner-all ui-shadow">
-                        Close <i class="fa fa-times-circle" aria-hidden="true"></i>
-                    </button>
+				<label for="btn-logged-user">Signed In As :</label>
+                <button class="ui-btn ui-corner-all ui-shadow" id="btn-logged-user">
+                </button>
                 </div>
 
             </div>
@@ -128,7 +144,9 @@
 
             <script src="js/jquery.min.js"></script>
             <script src="js/jquery.mobile-1.4.5.min.js"></script>
-            <script src="js/scripts.js"></script>
+			<script src="js/jquery.validate.min.js"></script>
+			<script type="text/javascript" src="js/email.min.js"></script>            
+			<script src="js/scripts.js"></script>
             
     </body>
 </html>

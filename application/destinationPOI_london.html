@@ -34,92 +34,92 @@
 
 		<div class="ui-content" role="main">
 			<ul data-role="listview" data-inset="true">
-				<li><a href="poi_Information.html" data-transition="slide">
+				<li id="li-londoneye"><a href="poi_Information.html" data-transition="slide">
 					<img src="images/londoneye.jpg" class="ui-li-thumb">
 					<h2>London Eye</h2>
 					<p>City Wide view of London</p>
 					<p class="ui-li-aside">
-						<a href="#" class="favlink">
+						<a id="londoneye" href="#" class="favlink">
 							<i class="fa fa-heart" aria-hidden="true"></i>
 						</a>
 					</p>
 				</a></li>
-				<li><a href="#">
+				<li id="li-tussauds"><a href="#">
 					<img src="images/1980.jpg" class="ui-li-thumb">
 					<h2>Madame Tussauds</h2>
 					<p>Wax Museum of Curiosities</p>
 					<p class="ui-li-aside">
-						<a href="#" class="favlink">
+						<a id="tussauds" href="#" class="favlink">
 							<i class="fa fa-heart" aria-hidden="true"></i>
 						</a>
 					</p>
 				</a></li>
-				<li><a href="#">
+				<li id="li-buckingham"><a href="#">
 					<img src="images/buckingham.jpg" class="ui-li-thumb">
 					<h2>Buckingham Place</h2>
 					<p>Official residence of British Royalty</p>
 					<p class="ui-li-aside">
-						<a href="#" class="favlink">
+						<a id="buckingham" href="#" class="favlink">
 							<i class="fa fa-heart" aria-hidden="true"></i>
 						</a>
 					</p>
 				</a></li>
-				<li><a href="#">
+				<li id="li-kingscross"><a href="#">
 					<img src="images/Kings_Cross.jpg" class="ui-li-thumb">
 					<h2>King's Cross </h2>
 					<p>London's first and oldest railway station</p>
 					<p class="ui-li-aside">
-						<a href="#" class="favlink">
+						<a id="kingscross" href="#" class="favlink">
 							<i class="fa fa-heart" aria-hidden="true"></i>
 						</a>
 					</p>
 				</a></li>
-				<li><a href="#">
+				<li id="li-towerlondon"><a href="#">
 					<img src="images/tower-of-london.jpg" class="ui-li-thumb">
 					<h2>Tower of London</h2>
 					<p>First and Oldest Castle in Britain</p>
 					<p class="ui-li-aside">
-						<a href="#" class="favlink">
+						<a id="towerlondon" href="#" class="favlink">
 							<i class="fa fa-heart" aria-hidden="true"></i>
 						</a>
 					</p>
 				</a></li>
-				<li><a href="#">
+				<li id="li-westminster"><a href="#">
 					<img src="images/Westminster.jpg" class="ui-li-thumb">
 					<h2>Westminster</h2>
 					<p>British Head of Government and house of representatives</p>
 					<p class="ui-li-aside">
-						<a href="#" class="favlink">
+						<a id="westminster" href="#" class="favlink">
 							<i class="fa fa-heart" aria-hidden="true"></i>
 						</a>
 					</p>
 				</a></li>
-				<li><a href="#">
+				<li id="li-pauls"><a href="#">
 					<img src="images/St.-Pauls-Cathedral.jpg" class="ui-li-thumb">
 					<h2>St. Paul's Cathedral </h2>
 					<p>Grand Cathedral in the heart of City</p>
 					<p class="ui-li-aside">
-						<a href="#" class="favlink">
+						<a id="pauls" href="#" class="favlink">
 							<i class="fa fa-heart" aria-hidden="true"></i>
 						</a>
 					</p>
 				</a></li>
-				<li><a href="#">
+				<li id="li-towerbridge"><a href="#">
 					<img src="images/Tower-Bridge.jpg" class="ui-li-thumb">
 					<h2>Tower Bridge </h2>
 					<p>Victorian Era National Monument</p>
 					<p class="ui-li-aside">
-						<a href="#" class="favlink">
+						<a id="towerbridge" href="#" class="favlink">
 							<i class="fa fa-heart" aria-hidden="true"></i>
 						</a>
 					</p>
 				</a></li>
-				<li><a href="#">
+				<li id="li-shard"><a href="#">
 					<img src="images/the_shard_and_tower_bridge.jpg" class="ui-li-thumb">
 					<h2>The Shard </h2>
 					<p>Modern Complex Of Luxary</p>
 					<p class="ui-li-aside">
-						<a href="#" class="favlink">
+						<a id="shard" href="#" class="favlink">
 							<i class="fa fa-heart" aria-hidden="true"></i>
 						</a>
 					</p>
@@ -142,15 +142,15 @@
 	
 	<!-- Options Panel -->
 	<div data-role="panel" id="options-push" data-display="overlay" data-position="right">
-		<ul data-role="listview">
-                    <li><a href="settings.html" class="fa fa-cog"> App Settings</a></li>
+                <ul data-role="listview">
+                    <li><a href="settings.html" data-ajax="false" class="fa fa-cog"> App Settings</a></li>
                     <li><a href="signin.html" class="fa fa-user-circle"> New User</a></li>
                     <li><a href="#" class="fa fa-info-circle" > About</a></li>
-		</ul>
-		<br><br>
-		<button data-rel="close" class="ui-btn ui-corner-all ui-shadow">
-			Close <i class="fa fa-times-circle" aria-hidden="true"></i>
-		</button>
+                </ul>
+                <br><br>
+				<label for="btn-logged-user">Signed In As :</label>
+                <button class="ui-btn ui-corner-all ui-shadow" id="btn-logged-user">
+                </button>
 	</div>
 
 </div>
@@ -158,6 +158,8 @@
 
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/email.min.js"></script>
 <script src="js/scripts.js"></script>
 
 	
