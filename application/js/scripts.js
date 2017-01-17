@@ -122,7 +122,7 @@ $(function() {
 	
 	$("#londoneye").click( function(e) 
 	{
-		e.preventDefault(); 
+		//e.preventDefault(); 
 		var someElement = document.getElementById("li-londoneye");
 		var someElementToString;
 
@@ -134,14 +134,13 @@ $(function() {
 		var favourite = { name:'londoneye', value:someElementToString};
 		setLocalStorage('fav_1',favourite);
 		 
-		console.log(getLocalStorage('fav_1').value);
+		//console.log(getLocalStorage('fav_1').value);
 		 
-		return false; 
 	});
 	
 	$("#tussauds").click( function(e) 
 	{
-		e.preventDefault(); 
+		//e.preventDefault(); 
 		var someElement = document.getElementById("li-tussauds");
 		var someElementToString;
 
@@ -155,12 +154,11 @@ $(function() {
 		 
 		//console.log(getLocalStorage('fav_1').value);
 		 
-		return false; 
 	});
 
 	$("#buckingham").click( function(e) 
 	{
-		e.preventDefault(); 
+		//e.preventDefault(); 
 		var someElement = document.getElementById("li-buckingham");
 		var someElementToString;
 
@@ -173,13 +171,12 @@ $(function() {
 		setLocalStorage('fav_3',favourite);
 		 
 		//console.log(getLocalStorage('fav_1').value);
-		 
-		return false; 
+		  
 	});	
 	
 	$("#kingscross").click( function(e) 
 	{
-		e.preventDefault(); 
+		//e.preventDefault(); 
 		var someElement = document.getElementById("li-kingscross");
 		var someElementToString;
 
@@ -192,14 +189,13 @@ $(function() {
 		setLocalStorage('fav_4',favourite);
 		 
 		//console.log(getLocalStorage('fav_1').value);
-		 
-		return false; 
+
 	});	
 
 
 	$("#towerlondon").click( function(e) 
 	{
-		e.preventDefault(); 
+		//e.preventDefault(); 
 		var someElement = document.getElementById("li-towerlondon");
 		var someElementToString;
 
@@ -213,12 +209,11 @@ $(function() {
 		 
 		//console.log(getLocalStorage('fav_1').value);
 		 
-		return false; 
 	});	
 
 	$("#westminster").click( function(e) 
 	{
-		e.preventDefault(); 
+		//e.preventDefault(); 
 		var someElement = document.getElementById("li-westminster");
 		var someElementToString;
 
@@ -232,12 +227,11 @@ $(function() {
 		 
 		//console.log(getLocalStorage('fav_1').value);
 		 
-		return false; 
 	});		
 	
 	$("#pauls").click( function(e) 
 	{
-		e.preventDefault(); 
+		//e.preventDefault(); 
 		var someElement = document.getElementById("li-pauls");
 		var someElementToString;
 
@@ -251,12 +245,11 @@ $(function() {
 		 
 		//console.log(getLocalStorage('fav_1').value);
 		 
-		return false; 
 	});
 
 	$("#towerbridge").click( function(e) 
 	{
-		e.preventDefault(); 
+		//e.preventDefault(); 
 		var someElement = document.getElementById("li-towerbridge");
 		var someElementToString;
 
@@ -269,13 +262,12 @@ $(function() {
 		setLocalStorage('fav_8',favourite);
 		 
 		//console.log(getLocalStorage('fav_1').value);
-		 
-		return false; 
+		  
 	});	
 	
 	$("#shard").click( function(e) 
 	{
-		e.preventDefault(); 
+		//e.preventDefault(); 
 		var someElement = document.getElementById("li-shard");
 		var someElementToString;
 
@@ -289,7 +281,6 @@ $(function() {
 		 
 		//console.log(getLocalStorage('fav_1').value);
 		 
-		return false; 
 	});
 	
 	

@@ -39,7 +39,7 @@
 					<h2>London Eye</h2>
 					<p>City Wide view of London</p>
 					<p class="ui-li-aside">
-						<a id="londoneye" href="#" class="favlink">
+						<a id="londoneye" href="#dlg-favourite" data-rel="popup" data-transition="pop" data-position-to="window" class="favlink">
 							<i class="fa fa-heart" aria-hidden="true"></i>
 						</a>
 					</p>
@@ -49,7 +49,7 @@
 					<h2>Madame Tussauds</h2>
 					<p>Wax Museum of Curiosities</p>
 					<p class="ui-li-aside">
-						<a id="tussauds" href="#" class="favlink">
+						<a id="tussauds" href="#dlg-favourite" data-rel="popup" data-transition="pop" data-position-to="window" class="favlink">
 							<i class="fa fa-heart" aria-hidden="true"></i>
 						</a>
 					</p>
@@ -59,7 +59,7 @@
 					<h2>Buckingham Place</h2>
 					<p>Official residence of British Royalty</p>
 					<p class="ui-li-aside">
-						<a id="buckingham" href="#" class="favlink">
+						<a id="buckingham" href="#dlg-favourite" data-rel="popup" data-transition="pop" data-position-to="window" class="favlink">
 							<i class="fa fa-heart" aria-hidden="true"></i>
 						</a>
 					</p>
@@ -69,7 +69,7 @@
 					<h2>King's Cross </h2>
 					<p>London's first and oldest railway station</p>
 					<p class="ui-li-aside">
-						<a id="kingscross" href="#" class="favlink">
+						<a id="kingscross" href="#dlg-favourite" data-rel="popup" data-transition="pop" data-position-to="window" class="favlink">
 							<i class="fa fa-heart" aria-hidden="true"></i>
 						</a>
 					</p>
@@ -79,7 +79,7 @@
 					<h2>Tower of London</h2>
 					<p>First and Oldest Castle in Britain</p>
 					<p class="ui-li-aside">
-						<a id="towerlondon" href="#" class="favlink">
+						<a id="towerlondon" href="#dlg-favourite" data-rel="popup" data-transition="pop" data-position-to="window" class="favlink">
 							<i class="fa fa-heart" aria-hidden="true"></i>
 						</a>
 					</p>
@@ -89,7 +89,7 @@
 					<h2>Westminster</h2>
 					<p>British Head of Government and house of representatives</p>
 					<p class="ui-li-aside">
-						<a id="westminster" href="#" class="favlink">
+						<a id="westminster" href="#dlg-favourite" data-rel="popup" data-transition="pop" data-position-to="window" class="favlink">
 							<i class="fa fa-heart" aria-hidden="true"></i>
 						</a>
 					</p>
@@ -99,7 +99,7 @@
 					<h2>St. Paul's Cathedral </h2>
 					<p>Grand Cathedral in the heart of City</p>
 					<p class="ui-li-aside">
-						<a id="pauls" href="#" class="favlink">
+						<a id="pauls" href="#dlg-favourite" data-rel="popup" data-transition="pop" data-position-to="window" class="favlink">
 							<i class="fa fa-heart" aria-hidden="true"></i>
 						</a>
 					</p>
@@ -109,7 +109,7 @@
 					<h2>Tower Bridge </h2>
 					<p>Victorian Era National Monument</p>
 					<p class="ui-li-aside">
-						<a id="towerbridge" href="#" class="favlink">
+						<a id="towerbridge" href="#dlg-favourite" data-rel="popup" data-transition="pop" data-position-to="window" class="favlink">
 							<i class="fa fa-heart" aria-hidden="true"></i>
 						</a>
 					</p>
@@ -119,13 +119,20 @@
 					<h2>The Shard </h2>
 					<p>Modern Complex Of Luxary</p>
 					<p class="ui-li-aside">
-						<a id="shard" href="#" class="favlink">
+						<a id="shard" href="#dlg-favourite" data-rel="popup" data-transition="pop" data-position-to="window" class="favlink">
 							<i class="fa fa-heart" aria-hidden="true"></i>
 						</a>
 					</p>
 				</a></li>				
 			</ul>
 		</div>
+		
+		<div data-role="popup" id="dlg-favourite" data-dismissible="false" style="max-width:400px;">
+                <div role="main" class="ui-content">
+                    <h3 class="mc-text-danger">POI Added To Favourites</h3>
+                    <div class="mc-text-center"><a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-b mc-top-margin-1-5">OK</a></div>
+                </div>
+		</div>		
 
 		<div data-role="footer" data-position="fixed">
 			<div data-role="navbar">
